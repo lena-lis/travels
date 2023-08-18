@@ -214,7 +214,9 @@
           </div>
         </section>
 
-        <section class="tours">
+        <!-- Ближайшие туры -->
+
+        <section class="tours" id="tours">
           <div class="tours__background-container">
             <picture>
               <source srcset="img/tours/clouds-desktop.webp 1x, img/tours/clouds-desktop@2x.webp 2x" type="image/webp" media="(min-width: 1200px)">
@@ -525,12 +527,12 @@
                 </ol>
               </div>
               <div class="tours__slider-buttons">
-                <button class="tours__button tours__button--prev swiper-button-prev" type="button">
+                <button class="tours__button tours__button--prev swiper-button-prev btn" type="button">
                   <svg aria-hidden="true" focusable="false" width="14" height="9">
                     <use href="img/sprite.svg#arrow"></use>
                   </svg>
                 </button>
-                <button class="tours__button tours__button--next swiper-button-next" type="button">
+                <button class="tours__button tours__button--next swiper-button-next btn" type="button">
                   <svg aria-hidden="true" focusable="false" width="14" height="9">
                     <use href="img/sprite.svg#arrow"></use>
                   </svg>
@@ -542,6 +544,200 @@
                   <use href="img/sprite.svg#arrow-small"></use>
                 </svg>
               </a>
+            </div>
+          </div>
+        </section>
+
+        <!-- Обучение -->
+
+        <section class="education" id="education">
+          <div class="education__container container">
+            <div class="education__description-container">
+              <h2>Обучение</h2>
+              <p>Обучение проводится квалифицированными специалистами, за&nbsp;плечами
+                которых десятки пройденных маршрутов Кавказа, Крыма, Гималаев, Эльбруса,
+                Алтая, Карелии, Адыгеи и&nbsp;других.</p>
+            </div>
+            <div class="education__instructors-container instructors">
+              <h3>Наши инструкторы</h3>
+              <div class="instructors__container">
+                <div class="instructors__slider swiper" data-instructors-slider>
+                  <ol class="instructors__list swiper-wrapper">
+                    <li class="instructors__card swiper-slide" tabindex="0">
+                      <h4>Александр Прокофьев</h4>
+                      <p>Строгий и&nbsp;внимательный инструктор, веселый и&nbsp;общительный человек. Любит природу.</p>
+                      <a href="#">
+                        <svg aria-hidden="true" focusable="false" width="14" height="9">
+                          <use href="img/sprite.svg#vk"></use>
+                        </svg>
+                        <span class="visually-hidden">ВКонтакте</span>
+                      </a>
+                      <div class="instructors__image-container">
+                        <picture>
+                          <source srcset="img/instructors/instructor1-desktop.webp 1x, img/instructors/instructor1-desktop@2x.webp 2x" type="image/webp" media="(min-width: 1200px)">
+                          <source srcset="img/instructors/instructor1-tablet.webp 1x, img/instructors/instructor1-tablet@2x.webp 2x" type="image/webp" media="(min-width: 768px)">
+                          <source srcset="img/instructors/instructor1-mobile.webp 1x, img/instructors/instructor1-mobile@2x.webp 2x" type="image/webp">
+
+                          <source srcset="img/instructors/instructor1-desktop.jpg 1x, img/instructors/instructor1-desktop@2x.jpg 2x" width="238" height="212" type="image/webp" media="(min-width: 1200px)">
+                          <source srcset="img/instructors/instructor1-tablet.jpg 1x, img/instructors/instructor1-tablet@2x.jpg 2x" width="176" height="212" type="image/webp" media="(min-width: 768px)">
+                          <img src="img/instructors/instructor1-mobile.jpg" width="250" height="212" srcset="img/instructors/instructor1-mobile@2x.jpg 2x" alt="Александр Прокофьев.">
+                        </picture>
+                      </div>
+                    </li>
+
+                    <li class="instructors__card swiper-slide" tabindex="0">
+                      <h4>Светлана Афиногенова</h4>
+                      <p>Видеть мир вокруг, познавать его опасности, находить друг друга, становиться ближе, чувствовать&nbsp;&mdash; в&nbsp;этом назначение жизни.</p>
+                      <a href="#">
+                        <svg aria-hidden="true" focusable="false" width="14" height="9">
+                          <use href="img/sprite.svg#vk"></use>
+                        </svg>
+                        <span class="visually-hidden">ВКонтакте</span>
+                      </a>
+                      <div class="instructors__image-container">
+                        <picture>
+                          <source srcset="img/instructors/instructor2-desktop.webp 1x, img/instructors/instructor2-desktop@2x.webp 2x" type="image/webp" media="(min-width: 1200px)">
+                          <source srcset="img/instructors/instructor2-tablet.webp 1x, img/instructors/instructor2-tablet@2x.webp 2x" type="image/webp" media="(min-width: 768px)">
+                          <source srcset="img/instructors/instructor2-mobile.webp 1x, img/instructors/instructor2-mobile@2x.webp 2x" type="image/webp">
+
+                          <source srcset="img/instructors/instructor2-desktop.jpg 1x, img/instructors/instructor2-desktop@2x.jpg 2x" width="238" height="212" type="image/webp" media="(min-width: 1200px)">
+                          <source srcset="img/instructors/instructor2-tablet.jpg 1x, img/instructors/instructor2-tablet@2x.jpg 2x" width="176" height="212" type="image/webp" media="(min-width: 768px)">
+                          <img src="img/instructors/instructor2-mobile.jpg" width="250" height="212" srcset="img/instructors/instructor2-mobile@2x.jpg 2x" alt="Светлана Афиногенова.">
+                        </picture>
+                      </div>
+                    </li>
+
+                    <li class="instructors__card swiper-slide" tabindex="0">
+                      <h4>Надежда Колесниченко</h4>
+                      <p>Участники говорят, что Надежда ответственная, приятная в&nbsp;общении, и&nbsp;в&nbsp;поездках с&nbsp;ней чувствуешь себя спокойно и&nbsp;уверенно.</p>
+                      <a href="#">
+                        <svg aria-hidden="true" focusable="false" width="14" height="9">
+                          <use href="img/sprite.svg#vk"></use>
+                        </svg>
+                        <span class="visually-hidden">ВКонтакте</span>
+                      </a>
+                      <div class="instructors__image-container">
+                        <picture>
+                          <source srcset="img/instructors/instructor3-desktop.webp 1x, img/instructors/instructor3-desktop@2x.webp 2x" type="image/webp" media="(min-width: 1200px)">
+                          <source srcset="img/instructors/instructor3-tablet.webp 1x, img/instructors/instructor3-tablet@2x.webp 2x" type="image/webp" media="(min-width: 768px)">
+                          <source srcset="img/instructors/instructor3-mobile.webp 1x, img/instructors/instructor3-mobile@2x.webp 2x" type="image/webp">
+
+                          <source srcset="img/instructors/instructor3-desktop.jpg 1x, img/instructors/instructor3-desktop@2x.jpg 2x" width="238" height="212" type="image/webp" media="(min-width: 1200px)">
+                          <source srcset="img/instructors/instructor3-tablet.jpg 1x, img/instructors/instructor3-tablet@2x.jpg 2x" width="176" height="212" type="image/webp" media="(min-width: 768px)">
+                          <img src="img/instructors/instructor3-mobile.jpg" width="250" height="212" srcset="img/instructors/instructor3-mobile@2x.jpg 2x" alt="Надежда Колесниченко.">
+                        </picture>
+                      </div>
+                    </li>
+
+                    <li class="instructors__card swiper-slide" tabindex="0">
+                      <h4>Федор Кайгородов</h4>
+                      <p>Опыт походов: Ходит в&nbsp;походы с&nbsp;2001&nbsp;года. В&nbsp;России побывал в&nbsp;горных районах Хибины, Архыз, много путешествует по&nbsp;Европе.</p>
+                      <a href="#">
+                        <svg aria-hidden="true" focusable="false" width="14" height="9">
+                          <use href="img/sprite.svg#vk"></use>
+                        </svg>
+                        <span class="visually-hidden">ВКонтакте</span>
+                      </a>
+                      <div class="instructors__image-container">
+                        <picture>
+                          <source srcset="img/instructors/instructor4-desktop.webp 1x, img/instructors/instructor4-desktop@2x.webp 2x" type="image/webp" media="(min-width: 1200px)">
+                          <source srcset="img/instructors/instructor4-tablet.webp 1x, img/instructors/instructor4-tablet@2x.webp 2x" type="image/webp" media="(min-width: 768px)">
+                          <source srcset="img/instructors/instructor4-mobile.webp 1x, img/instructors/instructor4-mobile@2x.webp 2x" type="image/webp">
+
+                          <source srcset="img/instructors/instructor4-desktop.jpg 1x, img/instructors/instructor4-desktop@2x.jpg 2x" width="238" height="212" type="image/webp" media="(min-width: 1200px)">
+                          <source srcset="img/instructors/instructor4-tablet.jpg 1x, img/instructors/instructor4-tablet@2x.jpg 2x" width="176" height="212" type="image/webp" media="(min-width: 768px)">
+                          <img src="img/instructors/instructor4-mobile.jpg" width="250" height="212" srcset="img/instructors/instructor4-mobile@2x.jpg 2x" alt="Федор Кайгородов.">
+                        </picture>
+                      </div>
+                    </li>
+
+                    <li class="instructors__card swiper-slide" tabindex="0">
+                      <h4>Светлана Афиногенова</h4>
+                      <p>Видеть мир вокруг, познавать его опасности, находить друг друга, становиться ближе, чувствовать&nbsp;&mdash; в&nbsp;этом назначение жизни.</p>
+                      <a href="#">
+                        <svg aria-hidden="true" focusable="false" width="14" height="9">
+                          <use href="img/sprite.svg#vk"></use>
+                        </svg>
+                        <span class="visually-hidden">ВКонтакте</span>
+                      </a>
+                      <div class="instructors__image-container">
+                        <picture>
+                          <source srcset="img/instructors/instructor2-desktop.webp 1x, img/instructors/instructor2-desktop@2x.webp 2x" type="image/webp" media="(min-width: 1200px)">
+                          <source srcset="img/instructors/instructor2-tablet.webp 1x, img/instructors/instructor2-tablet@2x.webp 2x" type="image/webp" media="(min-width: 768px)">
+                          <source srcset="img/instructors/instructor2-mobile.webp 1x, img/instructors/instructor2-mobile@2x.webp 2x" type="image/webp">
+
+                          <source srcset="img/instructors/instructor2-desktop.jpg 1x, img/instructors/instructor2-desktop@2x.jpg 2x" width="238" height="212" type="image/webp" media="(min-width: 1200px)">
+                          <source srcset="img/instructors/instructor2-tablet.jpg 1x, img/instructors/instructor2-tablet@2x.jpg 2x" width="176" height="212" type="image/webp" media="(min-width: 768px)">
+                          <img src="img/instructors/instructor2-mobile.jpg" width="250" height="212" srcset="img/instructors/instructor2-mobile@2x.jpg 2x" alt="Светлана Афиногенова.">
+                        </picture>
+                      </div>
+                    </li>
+
+                    <li class="instructors__card swiper-slide" tabindex="0">
+                      <h4>Надежда Колесниченко</h4>
+                      <p>Участники говорят, что Надежда ответственная, приятная в&nbsp;общении, и&nbsp;в&nbsp;поездках с&nbsp;ней чувствуешь себя спокойно и&nbsp;уверенно.</p>
+                      <a href="#">
+                        <svg aria-hidden="true" focusable="false" width="14" height="9">
+                          <use href="img/sprite.svg#vk"></use>
+                        </svg>
+                        <span class="visually-hidden">ВКонтакте</span>
+                      </a>
+                      <div class="instructors__image-container">
+                        <picture>
+                          <source srcset="img/instructors/instructor3-desktop.webp 1x, img/instructors/instructor3-desktop@2x.webp 2x" type="image/webp" media="(min-width: 1200px)">
+                          <source srcset="img/instructors/instructor3-tablet.webp 1x, img/instructors/instructor3-tablet@2x.webp 2x" type="image/webp" media="(min-width: 768px)">
+                          <source srcset="img/instructors/instructor3-mobile.webp 1x, img/instructors/instructor3-mobile@2x.webp 2x" type="image/webp">
+
+                          <source srcset="img/instructors/instructor3-desktop.jpg 1x, img/instructors/instructor3-desktop@2x.jpg 2x" width="238" height="212" type="image/webp" media="(min-width: 1200px)">
+                          <source srcset="img/instructors/instructor3-tablet.jpg 1x, img/instructors/instructor3-tablet@2x.jpg 2x" width="176" height="212" type="image/webp" media="(min-width: 768px)">
+                          <img src="img/instructors/instructor3-mobile.jpg" width="250" height="212" srcset="img/instructors/instructor3-mobile@2x.jpg 2x" alt="Надежда Колесниченко.">
+                        </picture>
+                      </div>
+                    </li>
+                  </ol>
+                </div>
+                <div class="instructors__slider-buttons">
+                  <button class="instructors__button instructors__button--prev swiper-button-prev btn" type="button">
+                    <svg aria-hidden="true" focusable="false" width="14" height="9">
+                      <use href="img/sprite.svg#arrow"></use>
+                    </svg>
+                  </button>
+                  <button class="instructors__button instructors__button--next swiper-button-next btn" type="button">
+                    <svg aria-hidden="true" focusable="false" width="14" height="9">
+                      <use href="img/sprite.svg#arrow"></use>
+                    </svg>
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div class="education__process-container">
+              <h3>Процесс обучения</h3>
+              <ul>
+                <li>
+                  <svg aria-hidden="true" focusable="false" width="25" height="25">
+                    <use href="img/sprite.svg#map"></use>
+                  </svg>
+                  <p>Изучение спортивного туристского движения</p>
+                </li>
+                <li>
+                  <svg aria-hidden="true" focusable="false" width="20" height="18">
+                    <use href="img/sprite.svg#boot"></use>
+                  </svg>
+                  <p>Подготовка и&nbsp;техническое снаряжение в&nbsp;походах</p>
+                </li>
+                <li>
+                  <svg aria-hidden="true" focusable="false" width="23" height="23">
+                    <use href="img/sprite.svg#pine"></use>
+                  </svg>
+                  <p>Лекции по&nbsp;окружающей среде, экологии и&nbsp;гигиене</p>
+                </li>
+                <li>
+                  <svg aria-hidden="true" focusable="false" width="25" height="25">
+                    <use href="img/sprite.svg#mountain"></use>
+                  </svg>
+                  <p>Разъяснение сложности горных препятствий</p>
+                </li>
+              </ul>
             </div>
           </div>
         </section>
