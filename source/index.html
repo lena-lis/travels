@@ -63,9 +63,155 @@
       </header>
 
       <main>
+
+        <!-- HERO -->
+
         <section class="hero">
           <h1 class="visually-hidden">Популярные направления наших туров</h1>
+          <div class="hero__container">
+            <div class="hero__slider swiper" data-hero-slider>
+              <ol class="hero__list swiper-wrapper">
+                <li class="hero__item swiper-slide">
+                  <h2>Захватывающие вершины Кавказа</h2>
+                  <p>В&nbsp;сопровождении опытных гидов вы&nbsp;пройдете через потрясающие ландшафты и&nbsp;совершите восход на&nbsp;вершину горы Чегет.</p>
+                  <a class="hero__button btn" href="#">Смотреть тур</a>
+                  <div class="hero__features-container">
+                    <p>
+                      <svg aria-hidden="true" focusable="false" width="12" height="12">
+                        <use href="img/sprite.svg#moon"></use>
+                      </svg>
+                      <span>6 дней/5 ночей</span>
+                    </p>
+                    <p>
+                      <svg aria-hidden="true" focusable="false" width="12" height="12">
+                        <use href="img/sprite.svg#level"></use>
+                      </svg>
+                      <span>Высокая сложность</span>
+                    </p>
+                  </div>
+                  <div class="hero__video-container" data-video-container>
+                    <picture>
+                      <source srcset="img/hero/poster-desktop.webp 1x, img/hero/poster-desktop@2x.webp 2x" type="image/webp" media="(min-width: 1200px)">
+                      <source srcset="img/hero/poster-tablet.webp 1x, img/hero/poster-tablet@2x.webp 2x" type="image/webp">
 
+                      <source srcset="img/hero/poster-desktop.jpg 1x, img/hero/poster-desktop@2x.jpg 2x" width="482" height="317" type="image/webp" media="(min-width: 1200px)">
+                      <img src="img/hero/poster-tablet.jpg" width="442" height="300" srcset="img/hero/poster-tablet@2x.jpg 2x" alt="Видео-презентация тура к вершинам Кавказа." data-video-poster>
+                    </picture>
+                    <button class="hero__video-button btn" data-video-button>
+                      <svg aria-hidden="true" focusable="false" width="12" height="22">
+                        <use href="img/sprite.svg#play-video"></use>
+                      </svg>
+                      <span class="visually-hidden">Включить видео</span>
+                    </button>
+                  </div>
+                  <div class="hero__background-container">
+                    <picture>
+                      <source srcset="img/hero/hero-caucasus-desktop.webp 1x, img/hero/hero-caucasus-desktop@2x.webp 2x" type="image/webp" media="(min-width: 1200px)">
+                      <source srcset="img/hero/hero-caucasus-tablet.webp 1x, img/hero/hero-caucasus-tablet@2x.webp 2x" type="image/webp" media="(min-width: 768px)">
+                      <source srcset="img/hero/hero-caucasus-mobile.webp 1x, img/hero/hero-caucasus-mobile@2x.webp 2x" type="image/webp">
+
+                      <source srcset="img/hero/hero-caucasus-desktop.jpg 1x, img/hero/hero-caucasus-desktop@2x.jpg 2x" width="1440" height="800" type="image/webp" media="(min-width: 1200px)">
+                      <source srcset="img/hero/hero-caucasus-tablet.jpg 1x, img/hero/hero-caucasus-tablet@2x.jpg 2x" width="768" height="1024" type="image/webp" media="(min-width: 768px)">
+                      <img src="img/hero/hero-caucasus-mobile.jpg" width="320" height="568" srcset="img/hero/hero-caucasus-mobile@2x.jpg 2x" alt="Захватывающие вершины Кавказа.">
+                    </picture>
+                  </div>
+                </li>
+                <li class="hero__item swiper-slide">
+                  <h2>Невероятная природа Камчатки</h2>
+                  <p>Незабываемое приключение, во&nbsp;время которого вы&nbsp;отправитесь в&nbsp;путешествие по&nbsp;одному из&nbsp;самых нетронутых уголков дикой природы в&nbsp;мире.</p>
+                  <a class="hero__button btn" href="#">Смотреть тур</a>
+                  <div class="hero__features-container">
+                    <p>
+                      <svg aria-hidden="true" focusable="false" width="12" height="12">
+                        <use href="img/sprite.svg#moon"></use>
+                      </svg>
+                      <span>9 дней/10 ночей</span>
+                    </p>
+                    <p>
+                      <svg aria-hidden="true" focusable="false" width="12" height="12">
+                        <use href="img/sprite.svg#level"></use>
+                      </svg>
+                      <span>Средняя сложность</span>
+                    </p>
+                  </div>
+                  <div class="hero__polaroid-container">
+                    <div class="hero__polaroid--left">
+                      <picture>
+                        <source srcset="img/hero/polaroid1-desktop.webp 1x, img/hero/polaroid1-desktop@2x.webp 2x" type="image/webp" media="(min-width: 1200px)">
+                        <source srcset="img/hero/polaroid1-tablet.webp 1x, img/hero/polaroid1-tablet@2x.webp 2x" type="image/webp">
+
+                        <source srcset="img/hero/polaroid1-desktop.png 1x, img/hero/polaroid1-desktop@2x.png 2x" width="308" height="407" type="image/webp" media="(min-width: 1200px)">
+                        <img src="img/hero/polaroid1-tablet.png" width="266" height="351" srcset="img/hero/polaroid1-tablet@2x.png 2x" alt="Горная долина на Камчатке.">
+                      </picture>
+                    </div>
+                    <div class="hero__polaroid--right">
+                      <picture>
+                        <source srcset="img/hero/polaroid2-desktop.webp 1x, img/hero/polaroid2-desktop@2x.webp 2x" type="image/webp" media="(min-width: 1200px)">
+                        <source srcset="img/hero/polaroid2-tablet.webp 1x, img/hero/polaroid2-tablet@2x.webp 2x" type="image/webp">
+
+                        <source srcset="img/hero/polaroid2-desktop.png 1x, img/hero/polaroid2-desktop@2x.png 2x" width="277" height="366" type="image/webp" media="(min-width: 1200px)">
+                        <img src="img/hero/polaroid2-tablet.png" width="236" height="312" srcset="img/hero/polaroid2-tablet@2x.png 2x" alt="Туристка с палками для скандинавской ходьбы в руках направляется к горам.">
+                      </picture>
+                    </div>
+                  </div>
+                  <div class="hero__background-container">
+                    <picture>
+                      <source srcset="img/hero/hero-kamchatka-desktop.webp 1x, img/hero/hero-kamchatka-desktop@2x.webp 2x" type="image/webp" media="(min-width: 1200px)">
+                      <source srcset="img/hero/hero-kamchatka-tablet.webp 1x, img/hero/hero-kamchatka-tablet@2x.webp 2x" type="image/webp" media="(min-width: 768px)">
+                      <source srcset="img/hero/hero-kamchatka-mobile.webp 1x, img/hero/hero-kamchatka-mobile@2x.webp 2x" type="image/webp">
+
+                      <source srcset="img/hero/hero-kamchatka-desktop.jpg 1x, img/hero/hero-kamchatka-desktop@2x.jpg 2x" width="1440" height="800" type="image/webp" media="(min-width: 1200px)">
+                      <source srcset="img/hero/hero-kamchatka-tablet.jpg 1x, img/hero/hero-kamchatka-tablet@2x.jpg 2x" width="768" height="1024" type="image/webp" media="(min-width: 768px)">
+                      <img src="img/hero/hero-kamchatka-mobile.jpg" width="320" height="568" srcset="img/hero/hero-kamchatka-mobile@2x.jpg 2x" alt="Невероятная природа Камчатки.">
+                    </picture>
+                  </div>
+                </li>
+                <li class="hero__item swiper-slide">
+                  <h2>Магические пейзажи Алтайского Края</h2>
+                  <p>Алтайский трекинг-тур&nbsp;&mdash; это захватывающее приключение с&nbsp;посещением магических  и&nbsp;захватывающих дух ландшафтов Алтайских гор.</p>
+                  <a class="hero__button btn" href="#">Смотреть тур</a>
+                  <div class="hero__features-container">
+                    <p>
+                      <svg aria-hidden="true" focusable="false" width="12" height="12">
+                        <use href="img/sprite.svg#moon"></use>
+                      </svg>
+                      <span>8 дней/7 ночей</span>
+                    </p>
+                    <p>
+                      <svg aria-hidden="true" focusable="false" width="12" height="12">
+                        <use href="img/sprite.svg#level"></use>
+                      </svg>
+                      <span>Легкая сложность</span>
+                    </p>
+                  </div>
+                  <div class="hero__video-container" data-audio-container>
+                    <picture>
+                      <source srcset="img/hero/poster-audio.webp 1x, img/hero/poster-audio@2x.webp 2x" type="image/webp">
+                      <img src="img/hero/poster-audio.png" width="340" height="220" srcset="img/hero/poster-audio@2x.png 2x" alt="Подкаст о путешествии в Алтайский Край." data-audio-poster>
+                    </picture>
+                    <button class="hero__audio-button btn" data-audio-button>
+                      <svg aria-hidden="true" focusable="false" width="47" height="47">
+                        <use href="img/sprite.svg#play-audio"></use>
+                      </svg>
+                      <span class="visually-hidden">Слушать подкаст</span>
+                    </button>
+                  </div>
+                  <div class="hero__background-container">
+                    <picture>
+                      <source srcset="img/hero/hero-altai-desktop.webp 1x, img/hero/hero-altai-desktop@2x.webp 2x" type="image/webp" media="(min-width: 1200px)">
+                      <source srcset="img/hero/hero-altai-tablet.webp 1x, img/hero/hero-altai-tablet@2x.webp 2x" type="image/webp" media="(min-width: 768px)">
+                      <source srcset="img/hero/hero-altai-mobile.webp 1x, img/hero/hero-altai-mobile@2x.webp 2x" type="image/webp">
+
+                      <source srcset="img/hero/hero-altai-desktop.jpg 1x, img/hero/hero-altai-desktop@2x.jpg 2x" width="1440" height="800" type="image/webp" media="(min-width: 1200px)">
+                      <source srcset="img/hero/hero-altai-tablet.jpg 1x, img/hero/hero-altai-tablet@2x.jpg 2x" width="768" height="1024" type="image/webp" media="(min-width: 768px)">
+                      <img src="img/hero/hero-altai-mobile.jpg" width="320" height="568" srcset="img/hero/hero-altai-mobile@2x.jpg 2x" alt="Магические пейзажи Алтайского Края.">
+                    </picture>
+                  </div>
+                </li>
+              </ol>
+              <div class="hero__pagination swiper-pagination"></div>
+            </div>
+          </div>
         </section>
       </main>
 
