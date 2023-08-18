@@ -691,6 +691,119 @@ button,
   pointer-events: none;
 }
 
+.main-header {
+  position: relative;
+  width: 100%;
+  max-width: 1920px;
+  margin: 0 auto;
+}
+
+.main-header__container {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: -webkit-max-content 1fr;
+  -ms-grid-columns: max-content 1fr;
+  grid-template-columns: -webkit-max-content 1fr;
+  grid-template-columns: max-content 1fr;
+  padding-top: 40px;
+  background-color: rgba(255, 255, 255, 0);
+}
+
+.main-header__logo-container {
+  margin-right: 40px;
+}
+
+.main-header__logo:hover img,
+.main-header__logo:focus img {
+  opacity: 0.6;
+}
+
+.main-header__logo:active img {
+  opacity: 0.4;
+}
+
+.main-navigation {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr -webkit-max-content;
+  -ms-grid-columns: 1fr max-content;
+  grid-template-columns: 1fr -webkit-max-content;
+  grid-template-columns: 1fr max-content;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.main-navigation__toggle {
+  display: none;
+}
+
+.main-navigation__menu ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.main-navigation__menu li {
+  padding: 20px 10px;
+}
+
+.main-navigation__menu a {
+  padding: 3px 5px;
+  font-size: 16px;
+  line-height: 16px;
+  color: #ffffff;
+  border: 1px solid rgba(255, 255, 255, 0);
+}
+
+.main-navigation__menu a:hover {
+  border-bottom: 1px solid #ffffff;
+}
+
+.main-navigation__menu a:focus {
+  border-color: #ffffff;
+  outline: none;
+}
+
+.main-navigation__menu a:active {
+  border-color: rgba(255, 255, 255, 0);
+}
+
+.main-navigation__menu a.disabled {
+  opacity: 0.5;
+  pointer-events: none;
+}
+
+.main-navigation__contacts {
+  margin-left: 40px;
+}
+
+.main-navigation__contacts a {
+  font-family: "Montserrat", "Arial", sans-serif;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 18px;
+  color: #ffffff;
+}
+
+.main-navigation__contacts a:hover,
+.main-navigation__contacts a:focus {
+  color: #1c3374;
+  outline: none;
+}
+
+.main-navigation__contacts a:active {
+  color: #0266c1;
+}
+
 /* @mixin hover-focus {
     @media (hover: hover) {
       &:hover:not(.focus-visible) {
@@ -742,11 +855,19 @@ button,
   .container {
     padding: 0 45px;
   }
+
+  .main-header__container {
+    padding-top: 37px;
+  }
 }
 
 @media (max-width: 767px) {
   .container {
     padding: 0 15px;
+  }
+
+  .main-header__container {
+    padding-top: 16px;
   }
 }
 
