@@ -22,15 +22,14 @@
           <div class="main-header__container container">
             <div class="main-header__logo-container">
               <a class="main-header__logo" href="index.html">
-                <picture>
-                  <source srcset="img/svg/logo-desktop.svg" width="205" height="62" type="image/svg+xml" media="(min-width: 1200px)">
-                  <source srcset="img/svg/logo-tablet.svg" width="144" height="44" type="image/svg+xml" media="(min-width: 768px)">
-                  <img src="img/svg/logo-mobile.svg" width="112" height="34" alt="Логотип турфирмы Lifetour">
-                </picture>
+                <svg aria-hidden="true" focusable="false" width="205" height="62">
+                  <use href="img/sprite.svg#logo"></use>
+                </svg>
+                <span class="visually-hidden">Логотип турфирмы Lifetour</span>
               </a>
             </div>
             <nav class="main-navigation main-navigation--nojs" data-nav-main>
-              <button class="main-navigation__toggle btn" type="button" aria-label="Открыть меню" data-nav-toggle>
+              <button class="main-navigation__toggle" type="button" aria-label="Открыть меню" data-nav-toggle>
                 <span class="main-navigation__toggle-icon"></span>
               </button>
               <div class="main-navigation__menu" data-nav-menu>
@@ -57,7 +56,7 @@
               </div>
               <div class="main-navigation__contacts">
                 <span class="visually-hidden">Позвонить в турфирму:</span>
-                <a href="tel:+78007253232">8 800 725 32 32</a>
+                <a class="main-navigation__phone" href="tel:+78007253232">8 800 725 32 32</a>
               </div>
             </nav>
           </div>

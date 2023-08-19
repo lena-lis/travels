@@ -10,11 +10,23 @@
     row-gap: 37px;
     margin-top: -42px;
   }
+
+  @include vp-767 {
+    grid-template-rows: repeat(3, minmax(30px, auto));
+    column-gap: 20px;
+    row-gap: 11px;
+    margin-top: -49px;
+  }
 }
 
 .main-navigation__menu {
   @include vp-1199 {
     grid-row: 2 / -1;
+    margin-left: -6px;
+  }
+
+  @include vp-767 {
+    grid-row: 3 / -1;
   }
 
   ul {
@@ -36,6 +48,11 @@
 
     @include vp-1199 {
       padding: 10px;
+      padding-left: 0;
+    }
+
+    @include vp-767 {
+      padding: 7px;
       padding-left: 0;
     }
   }
@@ -66,27 +83,43 @@
     }
 
     @include vp-1199 {
-      padding-left: 0;
       font-weight: 700;
-      font-size: 16px;
       letter-spacing: 0.64px;
       text-transform: uppercase;
       color: $color-elephant;
+
+      &:hover {
+        border-bottom: 1px solid $color-elephant;
+      }
+
+      &:focus {
+        border-color: $color-elephant;
+      }
     }
 
-    // @include vp-767 {
-    //   font-size: 16px;
-    //   padding: 0;
-    // }
+    @include vp-767 {
+      font-size: 14px;
+      line-height: 14px;
+      letter-spacing: 0.56px;
+    }
   }
 }
 
 .main-navigation__contacts {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
   margin-left: 40px;
 
   @include vp-1199 {
     grid-column: 2 / -1;
     text-align: end;
+  }
+
+  @include vp-767 {
+    grid-row: 2 / -1;
+    align-self: flex-start;
+    margin-left: 0;
   }
 
   a {
@@ -109,7 +142,6 @@
     @include vp-1199 {
       font-size: 16px;
       line-height: 16px;
-      color: $color-elephant;
 
       &.disabled {
         color: $color-navy-blue;
@@ -118,11 +150,11 @@
       }
     }
 
-    // @include vp-767 {
-    //   font-size: 20px;
-    //   font-weight: 600;
-    //   letter-spacing: 0.4px;
-    // }
+    @include vp-767 {
+      margin-top: 10px;
+      font-size: 14px;
+      line-height: 14px;
+    }
   }
 }
 
@@ -140,6 +172,11 @@
   @include vp-1199 {
     display: block;
   }
+
+  @include vp-767 {
+    width: 30px;
+    height: 30px;
+  }
 }
 
 // Меню без JS
@@ -148,15 +185,25 @@
   .main-navigation__toggle {
     display: none;
   }
+
+  a {
+    color: $color-elephant;
+
+    &:not(.main-navigation__phone) {
+      &:hover {
+        border-bottom: 1px solid $color-elephant;
+      }
+
+      &:focus {
+        border-color: $color-elephant;
+      }
+    }
+  }
 }
 
 // Закрытое меню
 
 .main-navigation--closed {
-  .main-navigation__menu {
-    display: none;
-  }
-
   .main-navigation__toggle-icon {
     position: absolute;
     top: 19px;
@@ -192,6 +239,10 @@
 
   @include vp-1199 {
     grid-template-rows: minmax(44px, auto);
+
+    .main-navigation__menu {
+      display: none;
+    }
   }
 }
 
@@ -227,5 +278,9 @@
       transform: rotate(-45deg);
       transition: bottom 300ms, transform 300ms 300ms cubic-bezier(0.68, -0.55, 0.27, 1.55);
     }
+  }
+
+  .main-navigation__phone {
+    color: $color-elephant;
   }
 }
