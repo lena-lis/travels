@@ -1,0 +1,29 @@
+.logo__link {
+  color: $color-default-white;
+
+  &:hover,
+  &:focus {
+    outline: none;
+    svg {
+      color: $color-resolution-blue;
+    }
+  }
+
+  &:active {
+    svg {
+      color: $color-navy-blue;
+    }
+  }
+
+  svg {
+    @include vp-1199 {
+      width: 144px;
+      height: 44px;
+    }
+
+    @include vp-767 {
+      width: 112px;
+      height: 34px;
+    }
+  }
+}

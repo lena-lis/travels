@@ -30,13 +30,13 @@
   }
 
   ul {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
+    // display: flex;
+    // flex-wrap: wrap;
+    // justify-content: center;
 
-    margin: 0;
-    padding: 0;
-    list-style-type: none;
+    // margin: 0;
+    // padding: 0;
+    // list-style-type: none;
 
     @include vp-1199 {
       flex-direction: column;
@@ -44,9 +44,9 @@
   }
 
   li {
-    flex-grow: 1;
-    padding: 20px 10px;
-    text-align: center;
+    // flex-grow: 1;
+    // padding: 20px 10px;
+    // text-align: center;
 
     @include vp-1199 {
       padding: 10px;
@@ -61,28 +61,15 @@
   }
 
   a {
-    padding: 3px 5px;
-    font-size: 16px;
-    line-height: 16px;
     color: $color-default-white;
-    border: 1px solid $color-transparent;
 
     &:hover {
-      border-bottom: 1px solid $color-default-white;
+      border-bottom-color: $color-default-white;
     }
 
     &:focus {
       border-color: $color-default-white;
       outline: none;
-    }
-
-    &:active {
-      border-color: $color-transparent;
-    }
-
-    &.disabled {
-      opacity: 0.5;
-      pointer-events: none;
     }
 
     @include vp-1199 {
@@ -109,9 +96,6 @@
 }
 
 .main-navigation__contacts {
-  display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
   margin-left: 121px;
 
   @include vp-1439 {
@@ -131,20 +115,11 @@
   }
 
   a {
-    font-family: $ff-montserrat;
-    font-size: 18px;
-    font-weight: 600;
-    line-height: 18px;
     color: $color-default-white;
 
-    &:hover,
-    &:focus {
-      color: $color-resolution-blue;
-      outline: none;
-    }
-
-    &:active {
-      color: $color-navy-blue;
+    &.disabled {
+      opacity: 0.1;
+      pointer-events: none;
     }
 
     @include vp-1199 {
@@ -153,8 +128,6 @@
 
       &.disabled {
         color: $color-navy-blue;
-        opacity: 0.1;
-        pointer-events: none;
       }
     }
 

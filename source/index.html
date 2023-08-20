@@ -20,8 +20,8 @@
         <div class="main-header">
           <div class="main-header__overlay" data-backdrop="static" data-menu-overlay></div>
           <div class="main-header__container container">
-            <div class="main-header__logo-container">
-              <a class="main-header__logo" href="index.html">
+            <div class="main-header__logo-container logo">
+              <a class="main-header__logo logo__link" href="index.html">
                 <svg aria-hidden="true" focusable="false" width="205" height="62">
                   <use href="img/sprite.svg#logo"></use>
                 </svg>
@@ -32,7 +32,7 @@
               <button class="main-navigation__toggle" type="button" aria-label="Открыть меню" data-nav-toggle>
                 <span class="main-navigation__toggle-icon"></span>
               </button>
-              <div class="main-navigation__menu" data-nav-menu>
+              <div class="main-navigation__menu menu" data-nav-menu>
                 <ul>
                   <li>
                     <a href="#tours">Туры</a>
@@ -54,7 +54,7 @@
                   </li>
                 </ul>
               </div>
-              <div class="main-navigation__contacts">
+              <div class="main-navigation__contacts phone">
                 <span class="visually-hidden">Позвонить в турфирму:</span>
                 <a class="main-navigation__phone" href="tel:+78007253232">8 800 725 32 32</a>
               </div>
@@ -744,19 +744,18 @@
         </section>
       </main>
 
-      <footer>
-        <div class="main-footer container">
-          <div class="main-footer__logo-container">
-            <a class="main-footer__logo" href="index.html">
-              <picture>
-                <source srcset="img/svg/logo-desktop.svg" width="205" height="62" type="image/svg+xml" media="(min-width: 1200px)">
-                <source srcset="img/svg/logo-tablet.svg" width="144" height="44" type="image/svg+xml" media="(min-width: 768px)">
-                <img src="img/svg/logo-mobile.svg" width="112" height="34" alt="Логотип турфирмы Lifetour">
-              </picture>
+      <footer class="main-footer">
+        <div class="main-footer__container container">
+          <div class="main-footer__logo-container logo">
+            <a class="main-footer__logo logo__link" href="index.html">
+              <svg aria-hidden="true" focusable="false" width="205" height="62">
+                <use href="img/sprite.svg#logo"></use>
+              </svg>
+              <span class="visually-hidden">Логотип турфирмы Lifetour</span>
             </a>
           </div>
 
-          <div class="main-footer__navigation">
+          <div class="main-footer__navigation menu">
             <ul>
               <li>
                 <a href="#tours">Туры</a>
@@ -779,10 +778,15 @@
             </ul>
           </div>
 
+          <div class="main-footer__contacts phone">
+            <span class="visually-hidden">Позвонить в турфирму:</span>
+            <a href="tel:+78007253232">8 800 725 32 32</a>
+          </div>
+
           <div class="main-footer__socials-container socials">
             <ul>
               <li>
-                <a href="https://vk.com/htmlacademy">
+                <a class="socials__link" href="#">
                   <svg aria-hidden="true" focusable="false" width="14" height="9">
                     <use href="img/sprite.svg#vk"></use>
                   </svg>
@@ -790,7 +794,7 @@
                 </a>
               </li>
               <li>
-                <a href="#">
+                <a class="socials__link" href="#">
                   <svg aria-hidden="true" focusable="false" width="9" height="16">
                     <use href="img/sprite.svg#ok"></use>
                   </svg>
@@ -798,7 +802,7 @@
                 </a>
               </li>
               <li>
-                <a href="#">
+                <a class="socials__link" href="#">
                   <svg aria-hidden="true" focusable="false" width="14" height="15">
                     <use href="img/sprite.svg#reddit"></use>
                   </svg>
@@ -810,11 +814,6 @@
 
           <div class="main-footer__privacy-policy">
             <a href="#">Политика конфиденциальности</a>
-          </div>
-
-          <div class="main-footer__contacts">
-            <span class="visually-hidden">Позвонить в турфирму:</span>
-            <a href="tel:+78007253232">8 800 725 32 32</a>
           </div>
         </div>
       </footer>

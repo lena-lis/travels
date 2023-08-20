@@ -1,0 +1,22 @@
+.phone {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+
+  a {
+    font-family: $ff-montserrat;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 18px;
+
+    &:hover,
+    &:focus {
+      color: $color-resolution-blue;
+      outline: none;
+    }
+
+    &:active {
+      color: $color-navy-blue;
+    }
+  }
+}
