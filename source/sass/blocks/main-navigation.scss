@@ -13,7 +13,7 @@
 
   @include vp-767 {
     grid-template-rows: repeat(3, minmax(30px, auto));
-    column-gap: 20px;
+    column-gap: 70px;
     row-gap: 11px;
     margin-top: -49px;
   }
@@ -30,24 +30,12 @@
   }
 
   ul {
-    // display: flex;
-    // flex-wrap: wrap;
-    // justify-content: center;
-
-    // margin: 0;
-    // padding: 0;
-    // list-style-type: none;
-
     @include vp-1199 {
       flex-direction: column;
     }
   }
 
   li {
-    // flex-grow: 1;
-    // padding: 20px 10px;
-    // text-align: center;
-
     @include vp-1199 {
       padding: 10px;
       padding-left: 0;
@@ -230,6 +218,10 @@
 // Открытое меню
 
 .main-navigation--opened {
+  @include vp-767 {
+    column-gap: 32px;
+  }
+
   .main-navigation__toggle-icon {
     position: absolute;
     top: 19px;
