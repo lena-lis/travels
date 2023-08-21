@@ -1,7 +1,7 @@
 import {iosVhFix} from './utils/ios-vh-fix';
 import {Form} from './modules/form-validate/form';
 import {menuToggle} from './modules/menu-toggle/menu-toggle';
-
+import './modules/slider/slider.js'
 // ---------------------------------
 
 window.addEventListener('DOMContentLoaded', () => {
