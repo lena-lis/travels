@@ -8,6 +8,7 @@
     grid-template-rows: repeat(2, minmax(44px, auto));
     column-gap: 144px;
     row-gap: 37px;
+    width: 100%;
     margin-top: -42px;
   }
 
@@ -37,6 +38,7 @@
 
   li {
     @include vp-1199 {
+      display: flex;
       padding: 10px;
       padding-left: 0;
       text-align: left;

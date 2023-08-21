@@ -1,4 +1,4 @@
-import Swiper from '../vendor/swiper.js';
+import Swiper from '../../vendor/swiper.js';
 
 const heroSlider = new Swiper('[data-hero-slider]', {
   loop: true,
