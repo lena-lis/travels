@@ -17,11 +17,19 @@
 
 .hero__content {
   display: grid;
-  grid-template-columns: repeat(12, 1fr);
+  grid-template-columns: repeat(12, 73px);
   grid-template-rows: auto;
   column-gap: 30px;
-  padding: 182px 120px 80px;
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 182px 120px 79px;
   color: $color-default-white;
+
+  @include vp-1439 {
+    grid-template-columns: repeat(12, minmax(76px, 96px));
+    padding: 142px 32px 49px;
+    column-gap: 20px;
+  }
 
   h2 {
     grid-column: 1 / 10;
@@ -32,6 +40,10 @@
     line-height: 77px;
     font-weight: 800;
     z-index: 100;
+
+    @include vp-1439 {
+      font-size: 5.35vw;
+    }
   }
 
   p {
@@ -45,16 +57,26 @@
   .hero__button-container {
     grid-column: 1 / 4;
     margin-bottom: 92px;
+
+    @include vp-1439 {
+      margin-bottom: 0;
+    }
   }
 
   .hero__features-container {
-    grid-column: 1 / 5;
+    grid-column: 1 / 6;
   }
+}
 
-  &--altai {
-    h2 {
-      grid-column: 1 / 11;
-    }
+.hero__content--caucasus {
+  p {
+    padding-right: 12px;
+  }
+}
+
+.hero__content--altai {
+  h2 {
+    grid-column: 1 / 11;
   }
 }
 
@@ -89,7 +111,7 @@
 
 .hero__background-container{
   position: absolute;
-  top: 0;
+  bottom: 0;
   left: 0;
   z-index: -1;
   width: 100%;
@@ -161,7 +183,7 @@
 
 .hero__polaroid-container {
   grid-column: 8 / -1;
-  grid-row: 1 / 4;
+  grid-row: 1 / 5;
 
   display: grid;
 }
@@ -205,13 +227,16 @@
   right: 0;
   bottom: 40px;
   left: -3px;
+  display: block;
   margin: auto;
   padding: 0;
 
   width: 47px;
   height: 47px;
 
-  background-color: $color-resolution-blue;
+  color: $color-resolution-blue;
+  background-color: $color-transparent;
+  border: none;
   border-radius: 50%;
   z-index: 30;
 
@@ -222,5 +247,14 @@
     bottom: 0;
     left: 0;
     margin: auto;
+    transform: translateX(2px);
+  }
+
+  &:hover {
+    color: $color-navy-blue;
+  }
+
+  &:focus {
+    color: $color-black-opacity;
   }
 }

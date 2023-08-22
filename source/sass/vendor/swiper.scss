@@ -258,8 +258,8 @@
 .swiper-pagination-custom,
 .swiper-horizontal > .swiper-pagination-bullets,
 .swiper-pagination-bullets.swiper-pagination-horizontal {
-  bottom: 80px;
-  right: 120px;
+  bottom: 91px;
+  right: 114px;
 }
 
 /* Bullets */
@@ -293,7 +293,7 @@
   width: 10px;
   height: 10px;
   display: inline-block;
-  border: 1px solid $color-default-white;
+  border: 1px solid #ffffff;
   border-radius: 50%;
 }
 button.swiper-pagination-bullet {
@@ -311,7 +311,7 @@ button.swiper-pagination-bullet {
   display: none !important;
 }
 .swiper-pagination-bullet-active {
-  background-color: $color-default-white;
+  background-color: #ffffff;
 }
 .swiper-vertical > .swiper-pagination-bullets,
 .swiper-pagination-vertical.swiper-pagination-bullets {
@@ -609,4 +609,10 @@ button.swiper-pagination-bullet {
   -webkit-backface-visibility: hidden;
           backface-visibility: hidden;
   overflow: hidden;
+}
+
+.swiper-slide-duplicate {
+  &:not(:not(&) ~ &) {
+    visibility: hidden;
+  }
 }
