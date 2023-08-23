@@ -11,13 +11,17 @@
 
 .hero__item {
   position: relative;
+
+  @include vp-1439 {
+    min-height: 667px;
+  }
 }
 
 // Общие стили контента слайдов
 
 .hero__content {
   display: grid;
-  grid-template-columns: repeat(12, 73px);
+  grid-template-columns: repeat(12, 1fr);
   grid-template-rows: auto;
   column-gap: 30px;
   max-width: 1440px;
@@ -70,7 +74,7 @@
 
 .hero__content--caucasus {
   p {
-    padding-right: 12px;
+    padding-right: 15px;
   }
 }
 
@@ -201,11 +205,20 @@
   &--left {
     margin-left: 72px;
     margin-top: 20px;
+
+    @include vp-1439 {
+      margin: 0;
+    }
   }
 
   &--right {
     margin-left: auto;
     margin-top: 113px;
+
+    @include vp-1439 {
+      margin-left: 133px;
+      margin-top: 93px;
+    }
   }
 }
 

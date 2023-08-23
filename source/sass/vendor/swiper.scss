@@ -249,6 +249,7 @@
   transition: 300ms opacity;
   transform: translate3d(0, 0, 0);
   z-index: 10;
+  max-width: 1440px;
 }
 .swiper-pagination.swiper-pagination-hidden {
   opacity: 0;
@@ -259,7 +260,13 @@
 .swiper-horizontal > .swiper-pagination-bullets,
 .swiper-pagination-bullets.swiper-pagination-horizontal {
   bottom: 91px;
-  right: 114px;
+  right: -10px;
+  left: 0;
+  text-align: end;
+
+  @media (max-width: 1439px) {
+    bottom: 60px;
+  }
 }
 
 /* Bullets */
