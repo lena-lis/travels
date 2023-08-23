@@ -1,7 +1,8 @@
 import {iosVhFix} from './utils/ios-vh-fix';
 import {Form} from './modules/form-validate/form';
 import {menuToggle} from './modules/menu-toggle/menu-toggle';
-import {initVideo} from './modules/play-video/play-video';
+import {initAudio} from './modules/play/play-audio';
+import {initVideo} from './modules/play/play-video';
 import './modules/slider/slider.js'
 // ---------------------------------
 
@@ -20,6 +21,7 @@ window.addEventListener('DOMContentLoaded', () => {
   window.addEventListener('load', () => {
     menuToggle();
     initVideo();
+    initAudio();
     const form = new Form();
     window.form = form;
     form.init();
