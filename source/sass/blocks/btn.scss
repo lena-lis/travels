@@ -30,4 +30,9 @@
 
     pointer-events: none;
   }
+
+  @include vp-1199 {
+    padding-right: 46px;
+    padding-left: 46px;
+  }
 }
