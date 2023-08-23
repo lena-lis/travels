@@ -3,7 +3,7 @@ import {Form} from './modules/form-validate/form';
 import {menuToggle} from './modules/menu-toggle/menu-toggle';
 import {initAudio} from './modules/play/play-audio';
 import {initVideo} from './modules/play/play-video';
-import './modules/slider/slider.js'
+import './modules/slider/slider.js';
 // ---------------------------------
 
 window.addEventListener('DOMContentLoaded', () => {

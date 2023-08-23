@@ -1,7 +1,7 @@
 const initAudio = () => {
   const audioContainer = document.querySelector('[data-audio-container]');
-  const playButton = videoContainer.querySelector('[data-audio-button]');
-  const poster = videoContainer.querySelector('[data-audio-poster]');
+  const playButton = audioContainer.querySelector('[data-audio-button]');
+  const poster = audioContainer.querySelector('[data-audio-poster]');
 
   if (audioContainer && playButton && poster) {
     playButton.addEventListener('click', function (evt) {
