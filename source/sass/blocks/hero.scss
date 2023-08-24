@@ -22,11 +22,12 @@
   }
 
   @include vp-1199 {
-    min-height: 1024px;
+    min-height: unset;
+    max-height: 1024px;
   }
 
-  @include vp-1199 {
-    min-height: 568px;
+  @include vp-767 {
+    max-height: 568px;
   }
 }
 
@@ -54,7 +55,6 @@
     flex-wrap: wrap;
     align-items: center;
 
-    min-height: 1024px;
     padding: 174px 45px 90px;
     text-align: center;
   }
@@ -159,6 +159,7 @@
   width: fit-content;
   height: fit-content;
   line-height: 14px;
+  padding: 0;
 }
 
 .hero__features-container {
@@ -225,6 +226,11 @@
 
   img {
     width: 100%;
+
+    @include vp-1199 {
+      max-height: 420px;
+      object-fit: cover;
+    }
   }
 
   iframe {
@@ -260,6 +266,10 @@
   border: 1px solid $color-default-white;
   border-radius: 50%;
   z-index: 30;
+
+  @include vp-1199 { // для перекрытия стилей от .btn
+    padding: 0;
+  }
 
   svg {
     position: inherit;
