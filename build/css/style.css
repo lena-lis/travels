@@ -1629,7 +1629,6 @@ button,
 
 .hero__slider {
   position: relative;
-  max-height: 800px;
 }
 
 .hero__list {
@@ -1695,6 +1694,10 @@ button,
   padding-right: 15px;
 }
 
+.hero__content--kamchatka p {
+  padding: 0 5px;
+}
+
 .hero__content--altai h2 {
   -ms-grid-column: 1;
   -ms-grid-column-span: 10;
@@ -1738,7 +1741,7 @@ button,
 
 .hero__background-container {
   position: absolute;
-  bottom: 0;
+  top: 0;
   left: 0;
   z-index: -1;
   width: 100%;
@@ -1818,14 +1821,21 @@ button,
   -ms-grid-row-span: 3;
   grid-row: 1/4;
   position: relative;
-  width: -webkit-fit-content;
-  width: -moz-fit-content;
-  width: fit-content;
-  height: -webkit-fit-content;
-  height: -moz-fit-content;
-  height: fit-content;
+  width: 340px;
+  height: 220px;
   margin-top: 119px;
   margin-left: auto;
+}
+
+.hero__audio-container img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+
+.hero__audio-container iframe {
+  height: 100%;
 }
 
 .hero__audio-button {
@@ -2295,10 +2305,6 @@ button,
     padding: 0 32px;
   }
 
-  .hero__item {
-    min-height: 667px;
-  }
-
   .hero__content {
     -ms-grid-columns: (minmax(76px, 96px))[12];
     grid-template-columns: repeat(12, minmax(76px, 96px));
@@ -2361,18 +2367,6 @@ button,
     height: 44px;
   }
 
-  .hero__slider {
-    max-height: unset;
-  }
-
-  .hero__item {
-    min-height: 1024px;
-  }
-
-  .hero__item {
-    min-height: 568px;
-  }
-
   .hero__content {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -2386,7 +2380,6 @@ button,
     -webkit-box-align: center;
     -ms-flex-align: center;
     align-items: center;
-    min-height: 1024px;
     padding: 174px 45px 90px;
     text-align: center;
   }
@@ -2431,6 +2424,12 @@ button,
     overflow: hidden;
   }
 
+  .hero__video-container img {
+    max-height: 420px;
+    -o-object-fit: cover;
+    object-fit: cover;
+  }
+
   .hero__video-container iframe {
     position: absolute;
     top: 0;
@@ -2439,6 +2438,10 @@ button,
     height: 100%;
     padding: 0 118px;
     outline-width: 0;
+  }
+
+  .hero__video-button {
+    padding: 0;
   }
 
   .hero__audio-container {
@@ -2590,12 +2593,29 @@ button,
 }
 
 @media (max-width: 767px) {
+  .swiper-pagination-fraction,
+  .swiper-pagination-custom,
+  .swiper-horizontal > .swiper-pagination-bullets,
+  .swiper-pagination-bullets.swiper-pagination-horizontal {
+    bottom: 34px;
+  }
+
+  .swiper-pagination-bullet {
+    width: 8px;
+    height: 8px;
+  }
+
+  .swiper-horizontal > .swiper-pagination-bullets .swiper-pagination-bullet,
+  .swiper-pagination-horizontal.swiper-pagination-bullets .swiper-pagination-bullet {
+    margin: 0 var(--swiper-pagination-bullet-horizontal-gap, 6px);
+  }
+
   .container {
     padding: 0 15px;
   }
 
   .btn {
-    padding: 18px 33px;
+    padding: 18px 32px;
   }
 
   .logo__link svg {
@@ -2603,8 +2623,12 @@ button,
     height: 34px;
   }
 
+  .hero__item {
+    min-height: 568px;
+  }
+
   .hero__content {
-    padding: 140px 15px 172px;
+    padding: 140px 15px 152px;
   }
 
   .hero__content h2 {
@@ -2617,6 +2641,40 @@ button,
     padding: 0;
     font-size: 15px;
     line-height: 20px;
+  }
+
+  .hero__content .hero__button-container {
+    width: 100%;
+    margin-bottom: 0;
+    padding: 0 55px;
+  }
+
+  .hero__content--caucasus p {
+    padding-right: 0;
+  }
+
+  .hero__content--caucasus .hero__button-container {
+    margin-bottom: 20px;
+  }
+
+  .hero__content--kamchatka .hero__button-container {
+    margin-bottom: 0;
+  }
+
+  .hero__content--altai .hero__button-container {
+    margin-bottom: 0;
+  }
+
+  .hero__button {
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    width: 100%;
+  }
+
+  .hero__background-container {
+    top: unset;
+    bottom: 0;
   }
 
   .hero__video-container {
@@ -2710,7 +2768,7 @@ button,
     -moz-column-gap: 70px;
     column-gap: 70px;
     row-gap: 11px;
-    margin-top: -49px;
+    margin-top: -54px;
   }
 
   .main-navigation__menu {
@@ -2735,7 +2793,6 @@ button,
   }
 
   .main-navigation__contacts a {
-    margin-top: 10px;
     font-size: 14px;
     line-height: 14px;
   }
