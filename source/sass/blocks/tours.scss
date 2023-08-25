@@ -12,6 +12,20 @@
   }
 }
 
+.tours__clouds-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  @include vp-1199 {
+    display: none;
+  }
+
+  img {
+    width: auto;
+  }
+}
+
 .tours__container {
   position: relative;
   padding-top: 119px;
