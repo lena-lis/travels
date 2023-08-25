@@ -2768,7 +2768,7 @@ button,
     -moz-column-gap: 70px;
     column-gap: 70px;
     row-gap: 11px;
-    margin-top: -54px;
+    margin-top: -49px;
   }
 
   .main-navigation__menu {
@@ -2793,6 +2793,7 @@ button,
   }
 
   .main-navigation__contacts a {
+    margin-top: 10px;
     font-size: 14px;
     line-height: 14px;
   }
