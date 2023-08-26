@@ -1513,7 +1513,6 @@ button,
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
   display: inline-flex;
-  padding: 21px 53px;
   font-family: "Montserrat", "Arial", sans-serif;
   font-size: 16px;
   line-height: 16px;
@@ -1706,6 +1705,7 @@ button,
   height: -webkit-fit-content;
   height: -moz-fit-content;
   height: fit-content;
+  padding: 21px 53px;
   line-height: 14px;
 }
 
@@ -2606,7 +2606,8 @@ button,
   }
 
   .container {
-    padding: 0 32px;
+    padding-right: 32px;
+    padding-left: 32px;
   }
 
   .hero__content {
@@ -2673,11 +2674,6 @@ button,
     padding: 0 45px;
   }
 
-  .btn {
-    padding-right: 46px;
-    padding-left: 46px;
-  }
-
   .logo__link svg {
     width: 144px;
     height: 44px;
@@ -2725,6 +2721,11 @@ button,
 
   .hero__content--altai .hero__button-container {
     margin-bottom: 69px;
+  }
+
+  .hero__button {
+    padding-right: 46px;
+    padding-left: 46px;
   }
 
   .hero__features-container {
@@ -3017,10 +3018,6 @@ button,
     padding: 0 15px;
   }
 
-  .btn {
-    padding: 18px 32px;
-  }
-
   .logo__link svg {
     width: 112px;
     height: 34px;
@@ -3073,6 +3070,7 @@ button,
     -ms-flex-pack: center;
     justify-content: center;
     width: 100%;
+    padding: 18px 32px;
   }
 
   .hero__background-container {
