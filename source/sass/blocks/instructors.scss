@@ -71,32 +71,6 @@
       line-height: 18px;
     }
   }
-
-  a {
-    grid-column: 2 / -1;
-    grid-row: 2 / 3;
-    align-self: center;
-
-    position: relative;
-    width: 24px;
-    height: 24px;
-    margin-left: auto;
-    color: $color-elephant;
-    border: 1px solid $color-navy-blue-opacity;
-
-    @include vp-767 {
-      margin-right: 12px;
-    }
-  }
-
-  svg {
-    position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    margin: auto;
-  }
 }
 
 .instructors__card:not(:first-of-type) {
@@ -121,6 +95,55 @@
   @include vp-767 {
     box-shadow: none;
     visibility: hidden;
+  }
+}
+
+.instructors__link {
+  grid-column: 2 / -1;
+  grid-row: 2 / 3;
+  align-self: center;
+
+  position: relative;
+  width: 24px;
+  height: 24px;
+  margin-left: auto;
+  color: $color-elephant;
+  border: 1px solid $color-navy-blue-opacity;
+
+  @include vp-767 {
+    margin-right: 12px;
+  }
+
+  &:hover,
+  &:focus {
+    border-color: $color-elephant;
+    outline: none;
+  }
+
+  &:active {
+    background-color: $color-navy-blue;
+    border-color: $color-navy-blue;
+
+    svg {
+      color: $color-default-white;
+    }
+  }
+
+  &.disabled {
+    pointer-events: none;
+
+    svg {
+      opacity: 0.3;
+    }
+  }
+
+  svg {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    margin: auto;
   }
 }
 
