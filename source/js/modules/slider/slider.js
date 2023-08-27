@@ -35,6 +35,7 @@ const toursSlider = new Swiper('[data-tours-slider]', {
 
 const instructorsSlider = new Swiper('[data-instructors-slider]', {
   loop: false,
+  slidesPerView: 1,
   breakpoints: {
     768: {
       slidesPerView: 3,
@@ -50,6 +51,8 @@ const instructorsSlider = new Swiper('[data-instructors-slider]', {
     prevEl: '.instructors__button--prev',
     nextEl: '.instructors__button--next',
   },
+  slideActiveClass: 'instructors__card--active',
+  slideNextClass: 'instructors__card--next',
 });
 
 const reviewsSlider = new Swiper('[data-reviews-slider]', {
