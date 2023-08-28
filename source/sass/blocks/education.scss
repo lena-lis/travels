@@ -1,5 +1,14 @@
 .education__container {
+  margin-bottom: 95px;
   padding-top: 3px;
+
+  @include vp-1199 {
+    margin-bottom: 89px;
+  }
+
+  @include vp-767 {
+    margin-bottom: -8px;
+  }
 
   h3 {
     margin: 0;

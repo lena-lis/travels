@@ -1,11 +1,21 @@
 .about {
   position: relative;
+  margin-bottom: 121px;
+
+  @include vp-1199 {
+    margin-bottom: 90px;
+  }
+
+  @include vp-767 {
+    margin-bottom: 72px;
+  }
 }
 
 .about__clouds-container {
   position: absolute;
-  top: 0;
+  top: -165px;
   right: 0;
+  z-index: -1;
 
   @include vp-1199 {
     display: none;
@@ -16,31 +26,65 @@
   position: absolute;
   top: 0;
   left: 0;
+  z-index: -1;
+
+  @include vp-1199 {
+    top: 7px;
+  }
+
+  @include vp-767 {
+    position: unset;
+    margin-bottom: 47px;
+  }
+
+  img {
+    width: auto;
+
+    @include vp-767 {
+      width: 100%;
+    }
+  }
 }
 
 .about__container {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
+  gap: 30px;
+
+  @include vp-1439 {
+    gap: 115px;
+  }
+
+  @include vp-1199 {
+    gap: 30px;
+  }
 
   @include vp-767 {
-    grid-template-columns: 1fr;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
   }
 }
 
 .about__content {
   grid-column: 2 / -1;
+  padding-top: 35px;
+
+  @include vp-1199 {
+    padding-top: 0;
+  }
 
   h2 {
     position: relative;
     margin: 0;
-    margin-bottom: 58px;
+    margin-bottom: 57px;
     font-size: 35px;
     line-height: 35px;
     font-weight: 800;
     z-index: 1;
 
     @include vp-1199 {
-      margin-bottom: 36px;
+      margin-bottom: 35px;
       font-size: 25px;
       line-height: 25px;
     }
@@ -54,7 +98,7 @@
     &::before {
       position: absolute;
       top: -17px;
-      left: 12.5%;
+      left: 14.5%;
       transform: translateX(-50%);
       font-size: 55px;
       line-height: 55px;
@@ -83,18 +127,17 @@
 
   h3 {
     margin: 0;
-    margin-bottom: 20px;
+    margin-bottom: 15px;
     font-size: 21px;
     line-height: 21px;
 
     @include vp-1199 {
-      margin-bottom: 19px;
-      font-size: 20px;
-      line-height: 20px;
+      font-size: 18px;
+      line-height: 18px;
     }
 
     @include vp-767 {
-      margin-bottom: 18px;
+      margin-bottom: 16px;
       font-size: 16px;
       line-height: 16px;
     }
@@ -108,15 +151,23 @@
     }
   }
 
-  p + h3 {
-    margin-bottom: 26px;
+  p:first-of-type {
+    padding-right: 20px;
 
     @include vp-1199 {
-      margin-bottom: 25px;
+      padding-right: 0;
+    }
+  }
+
+  p + h3 {
+    margin-top: 31px;
+
+    @include vp-1199 {
+      margin-top: 29px;
     }
 
     @include vp-767 {
-      margin-bottom: 41px;
+      margin-top: 43px;
     }
   }
 }
