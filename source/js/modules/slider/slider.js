@@ -56,14 +56,13 @@ const instructorsSlider = new Swiper('[data-instructors-slider]', {
 });
 
 const reviewsSlider = new Swiper('[data-reviews-slider]', {
+  cssMode: true,
   loop: false,
   breakpoints: {
     768: {
-      slidesPerView: 2,
       spaceBetween: 30,
     },
     1200: {
-      slidesPerView: 2,
       spaceBetween: 30,
       allowTouchMove: false,
     },
@@ -72,6 +71,8 @@ const reviewsSlider = new Swiper('[data-reviews-slider]', {
     prevEl: '.reviews__button--prev',
     nextEl: '.reviews__button--next',
   },
+  slideActiveClass: 'reviews__item--active',
+  slideNextClass: 'reviews__item--next',
 });
 
 export {heroSlider, toursSlider, instructorsSlider, reviewsSlider};

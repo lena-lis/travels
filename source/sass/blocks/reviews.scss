@@ -2,7 +2,7 @@
   h2 {
     position: relative;
     margin: 0;
-    margin-bottom: 31px;
+    margin-bottom: 7px;
     font-size: 35px;
     line-height: 35px;
     font-weight: 800;
@@ -23,7 +23,7 @@
     &::before {
       position: absolute;
       top: -17px;
-      left: 12.5%;
+      left: 10%;
       transform: translateX(-50%);
       font-size: 55px;
       line-height: 55px;
@@ -53,7 +53,7 @@
 
 .reviews__container {
   position: relative;
-  padding: 0 90px;
+  padding-left: 90px;
 
   @include vp-1439 {
     padding: 0;
@@ -70,8 +70,8 @@
 
 .reviews__slider-buttons {
   position: absolute;
-  right: 112px;
-  bottom: 101.3%;
+  right: 110px;
+  bottom: 106%;
   display: flex;
 
   @include vp-1439 {
@@ -90,6 +90,7 @@
 }
 
 .reviews__slider {
+  // отступы здесь нужны для того, чтобы была видна box-shadow у карточки с отзывом
   padding: 0 30px;
 
   @include vp-767 {
@@ -97,21 +98,47 @@
   }
 }
 
+// Слайд
+
 .reviews__item {
   display: grid;
-  grid-template-columns: fit-content auto;
+  grid-template-columns: repeat(2, auto);
+  column-gap: 30px;
   width: 100%;
+  max-width: 790px;
   height: auto;
-  margin: 30px 0;
+  margin: 20px 0;
   padding: 20px;
   padding-right: 40px;
   background-color: $color-default-white;
 
+  blockquote {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    padding-top: 14px;
+  }
+
   p {
+    margin: 0;
+
     @include vp-1199 {
       font-size: 12px;
       line-height: 18px;
     }
+  }
+
+  p + p {
+    margin-top: 10px;
+    margin-bottom: 26px;
+  }
+
+  cite {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    margin-top: auto;
+    margin-bottom: 16px;
   }
 
   span {
@@ -122,6 +149,7 @@
   }
 
   span:first-of-type {
+    margin-bottom: 8px;
     font-size: 13px;
     line-height: 13px;
     font-weight: 700;
@@ -131,4 +159,20 @@
       line-height: 12px;
     }
   }
+}
+
+.reviews__image-container {
+  grid-column: 1 / 2;
+  grid-row: 1 / -1;
+
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+}
+
+.reviews__item.reviews__item--active,
+.reviews__item.reviews__item--next {
+  box-shadow: 0 0 30px 0 rgba(28, 51, 116, 0.1);
 }
