@@ -71,8 +71,6 @@ const reviewsSlider = new Swiper('[data-reviews-slider]', {
     prevEl: '.reviews__button--prev',
     nextEl: '.reviews__button--next',
   },
-  slideActiveClass: 'reviews__item--active',
-  slideNextClass: 'reviews__item--next',
 });
 
 export {heroSlider, toursSlider, instructorsSlider, reviewsSlider};

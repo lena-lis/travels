@@ -53,7 +53,7 @@
 
 .reviews__container {
   position: relative;
-  padding-left: 90px;
+  padding-left: 90px; // может, решить через вычисляемую величину?
 
   @include vp-1439 {
     padding: 0;
@@ -101,16 +101,20 @@
 // Слайд
 
 .reviews__item {
+  max-width: 790px;
+  height: auto;
+}
+
+.reviews__inner {
   display: grid;
   grid-template-columns: repeat(2, auto);
   column-gap: 30px;
-  width: 100%;
-  max-width: 790px;
-  height: auto;
+
   margin: 20px 0;
   padding: 20px;
   padding-right: 40px;
   background-color: $color-default-white;
+  box-shadow: 0 0 20px 0 rgba(28, 51, 116, 0.1);
 
   blockquote {
     display: flex;
@@ -170,9 +174,4 @@
     height: 100%;
     object-fit: cover;
   }
-}
-
-.reviews__item.reviews__item--active,
-.reviews__item.reviews__item--next {
-  box-shadow: 0 0 30px 0 rgba(28, 51, 116, 0.1);
 }
