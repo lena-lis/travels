@@ -2,20 +2,20 @@
   h2 {
     position: relative;
     margin: 0;
-    margin-bottom: 7px;
+    margin-bottom: 12px;
     font-size: 35px;
     line-height: 35px;
     font-weight: 800;
     z-index: 1;
 
     @include vp-1199 {
-      margin-bottom: 30px;
+      margin-bottom: 12px;
       font-size: 25px;
       line-height: 25px;
     }
 
     @include vp-767 {
-      margin-bottom: 33px;
+      margin-bottom: 17px;
       font-size: 22px;
       line-height: 22px;
     }
@@ -53,14 +53,14 @@
 
 .reviews__container {
   position: relative;
-  padding-left: 90px; // может, решить через вычисляемую величину?
+  padding-left: 105px;
 
   @include vp-1439 {
-    padding: 0;
+    padding-left: calc(50% - 615px);
   }
 
   @include vp-1199 {
-    padding: 0 15px;
+    padding-left: 30px;
   }
 
   @include vp-767 {
@@ -71,7 +71,7 @@
 .reviews__slider-buttons {
   position: absolute;
   right: 110px;
-  bottom: 106%;
+  bottom: 107.6%;
   display: flex;
 
   @include vp-1439 {
@@ -80,29 +80,32 @@
 
   @include vp-1199 {
     right: 35px;
-    bottom: 98.7%;
+    bottom: 106%;
   }
 
   @include vp-767 {
     right: 5px;
-    bottom: 98.8%;
+    bottom: 102.8%;
   }
 }
 
 .reviews__slider {
-  // отступы здесь нужны для того, чтобы была видна box-shadow у карточки с отзывом
-  padding: 0 30px;
-
-  @include vp-767 {
-    padding: 0 15px;
-  }
+  width: 100%;
 }
 
 // Слайд
 
 .reviews__item {
-  max-width: 790px;
+  max-width: 820px;
   height: auto;
+
+  @include vp-1199 {
+    max-width: 590px;
+  }
+
+  @include vp-767 {
+    max-width: 767px;
+  }
 }
 
 .reviews__inner {
@@ -110,17 +113,31 @@
   grid-template-columns: repeat(2, auto);
   column-gap: 30px;
 
-  margin: 20px 0;
+  margin: 15px;
   padding: 20px;
   padding-right: 40px;
   background-color: $color-default-white;
   box-shadow: 0 0 20px 0 rgba(28, 51, 116, 0.1);
+
+  @include vp-1199 {
+    padding-right: 30px;
+  }
+
+  @include vp-767 {
+    display: flex;
+    flex-direction: column;
+    padding-right: 20px;
+  }
 
   blockquote {
     display: flex;
     flex-direction: column;
     margin: 0;
     padding-top: 14px;
+
+    @include vp-1199 {
+      padding-top: 3px;
+    }
   }
 
   p {
@@ -135,6 +152,14 @@
   p + p {
     margin-top: 10px;
     margin-bottom: 26px;
+
+    @include vp-1199 {
+      margin-bottom: 28px;
+    }
+
+    @include vp-767 {
+      margin-bottom: 17px;
+    }
   }
 
   cite {
@@ -143,6 +168,14 @@
     flex-direction: column;
     margin-top: auto;
     margin-bottom: 16px;
+
+    @include vp-1199 {
+      margin-bottom: 3px;
+    }
+
+    @include vp-767 {
+      margin-bottom: 0;
+    }
   }
 
   span {
@@ -159,6 +192,7 @@
     font-weight: 700;
 
     @include vp-1199 {
+      margin-bottom: 7px;
       font-size: 12px;
       line-height: 12px;
     }
@@ -168,6 +202,11 @@
 .reviews__image-container {
   grid-column: 1 / 2;
   grid-row: 1 / -1;
+
+  @include vp-767 {
+    margin-bottom: 16px;
+    order: -1;
+  }
 
   img {
     width: 100%;

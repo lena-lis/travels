@@ -58,12 +58,15 @@ const instructorsSlider = new Swiper('[data-instructors-slider]', {
 const reviewsSlider = new Swiper('[data-reviews-slider]', {
   cssMode: true,
   loop: false,
+  slidesPerView: 1,
   breakpoints: {
     768: {
-      spaceBetween: 30,
+      slidesPerView: 'auto',
+      spaceBetween: 0,
     },
     1200: {
-      spaceBetween: 30,
+      slidesPerView: 'auto',
+      spaceBetween: 0,
       allowTouchMove: false,
     },
   },
