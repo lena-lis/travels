@@ -4,6 +4,7 @@ import {menuToggle} from './modules/menu-toggle/menu-toggle';
 import {setEventListener} from './modules/play/play-audio';
 import {initVideo} from './modules/play/play-video';
 import './modules/slider/slider.js';
+import './modules/slider/features-slider.js';
 
 // ---------------------------------
 
