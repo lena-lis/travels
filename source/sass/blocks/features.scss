@@ -1,5 +1,6 @@
 .features {
   position: relative;
+  margin-bottom: 130px;
 
   h2 {
     position: relative;
@@ -17,7 +18,7 @@
     }
 
     @include vp-767 {
-      margin-bottom: 33px;
+      margin-bottom: 29px;
       font-size: 22px;
       line-height: 22px;
     }
@@ -36,14 +37,14 @@
 
       @include vp-1199 {
         top: -13px;
-        left: 16.4%;
+        left: 28.4%;
         font-size: 40px;
         line-height: 40px;
       }
 
       @include vp-767 {
         top: -4px;
-        left: 49.5%;
+        left: 15.6%;
         font-size: 26px;
         line-height: 26px;
       }
@@ -71,11 +72,30 @@
 
 .features__container {
   position: relative;
-  padding-bottom: 120px;
+  padding-bottom: 85px;
 }
 
 .features__slider {
-  padding-bottom: 70px;
+  @include vp-1199 {
+    padding: 0 45px;
+  }
+
+  @include vp-767 {
+    padding: 0 15px;
+  }
+}
+
+.features__list {
+  @include vp-1199 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+  }
+
+  @include vp-767 {
+    gap: 15px;
+  }
 }
 
 .features__item {
@@ -84,17 +104,19 @@
   flex-direction: column;
   max-width: 380px;
   height: auto;
-  padding: 40px 20px;
+  padding: 39px 20px;
   text-align: center;
   background-color: $color-default-white;
   border: 1px solid $color-navy-blue-opacity;
 
   @include vp-1199 {
-    padding: 30px 20px;
+    max-width: 324px;
+    padding: 29px 20px;
   }
 
   @include vp-767 {
-    padding: 20px 10px;
+    max-width: unset;
+    padding: 19px 10px;
   }
 
   h3 {
@@ -166,10 +188,10 @@
 }
 
 .features__slider-buttons {
+  position: absolute;
+  bottom: 0;
+  left: 47.3%;
   display: flex;
-  justify-content: center;
-  transform: translateX(5px);
-  z-index: 1;
 
   @include vp-1199 {
     display: none;
