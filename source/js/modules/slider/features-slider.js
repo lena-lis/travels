@@ -9,9 +9,12 @@ let featuresSlider;
 const enableSlider = () => {
   featuresSlider = new Swiper('[data-features-slider]', {
     loop: true,
-    slidesPerView: 3,
+    slidesPerView: 'auto',
+    initialSlide: 2,
+    spaceBetween: 30,
     centeredSlides: true,
     freeMode: true,
+    allowTouchMove: false,
     navigation: {
       prevEl: '.features__button--prev',
       nextEl: '.features__button--next',

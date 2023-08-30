@@ -4,7 +4,7 @@
   h2 {
     position: relative;
     margin: 0;
-    margin-bottom: 50px;
+    margin-bottom: 47px;
     font-size: 35px;
     line-height: 35px;
     font-weight: 800;
@@ -25,8 +25,7 @@
     &::before {
       position: absolute;
       top: -17px;
-      left: 10%;
-      transform: translateX(-50%);
+      left: 34%;
       font-size: 55px;
       line-height: 55px;
       font-weight: 800;
@@ -60,20 +59,31 @@
   }
 
   &--left {
-    top: 0;
+    top: -39%;
     left: 0;
   }
 
   &--right {
-    top: 0;
+    top: -9%;
     right: 0;
   }
+}
+
+.features__container {
+  position: relative;
+  padding-bottom: 120px;
+}
+
+.features__slider {
+  padding-bottom: 70px;
 }
 
 .features__item {
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
+  max-width: 380px;
+  height: auto;
   padding: 40px 20px;
   text-align: center;
   background-color: $color-default-white;
@@ -119,7 +129,8 @@
   position: relative;
   width: 54px;
   height: 54px;
-  margin-bottom: 30px;
+  margin: 0 auto 30px;
+  color: $color-navy-blue;
   border: 1px solid $color-navy-blue;
   order: -1;
 
@@ -141,6 +152,7 @@
     bottom: 0;
     left: 0;
     margin: auto;
+    fill: none;
 
     @include vp-1199 {
       width: 20px;
@@ -150,5 +162,16 @@
     @include vp-767 {
       width: 18px;
     }
+  }
+}
+
+.features__slider-buttons {
+  display: flex;
+  justify-content: center;
+  transform: translateX(5px);
+  z-index: 1;
+
+  @include vp-1199 {
+    display: none;
   }
 }
