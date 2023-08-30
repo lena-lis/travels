@@ -2895,6 +2895,7 @@ button,
 
 .reviews__container {
   position: relative;
+  padding-bottom: 121px;
   padding-left: 105px;
 }
 
@@ -2997,12 +2998,13 @@ button,
 
 .features {
   position: relative;
+  margin-bottom: 130px;
 }
 
 .features h2 {
   position: relative;
   margin: 0;
-  margin-bottom: 50px;
+  margin-bottom: 47px;
   font-size: 35px;
   line-height: 35px;
   font-weight: 800;
@@ -3013,10 +3015,7 @@ button,
 .features h2::before {
   position: absolute;
   top: -17px;
-  left: 10%;
-  -webkit-transform: translateX(-50%);
-  -ms-transform: translateX(-50%);
-  transform: translateX(-50%);
+  left: 34%;
   font-size: 55px;
   line-height: 55px;
   font-weight: 800;
@@ -3031,13 +3030,18 @@ button,
 }
 
 .features__clouds-container--left {
-  top: 0;
+  top: -39%;
   left: 0;
 }
 
 .features__clouds-container--right {
-  top: 0;
+  top: -9%;
   right: 0;
+}
+
+.features__container {
+  position: relative;
+  padding-bottom: 85px;
 }
 
 .features__item {
@@ -3050,7 +3054,9 @@ button,
   -webkit-box-direction: normal;
   -ms-flex-direction: column;
   flex-direction: column;
-  padding: 40px 20px;
+  max-width: 380px;
+  height: auto;
+  padding: 39px 20px;
   text-align: center;
   background-color: #ffffff;
   border: 1px solid rgba(2, 102, 193, 0.1);
@@ -3072,7 +3078,8 @@ button,
   position: relative;
   width: 54px;
   height: 54px;
-  margin-bottom: 30px;
+  margin: 0 auto 30px;
+  color: #0266c1;
   border: 1px solid #0266c1;
   -webkit-box-ordinal-group: 0;
   -ms-flex-order: -1;
@@ -3086,6 +3093,91 @@ button,
   bottom: 0;
   left: 0;
   margin: auto;
+  fill: none;
+}
+
+.features__slider-buttons {
+  position: absolute;
+  bottom: 0;
+  left: 47.3%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.gallery__description-container {
+  margin-bottom: 45px;
+}
+
+.gallery__description-container h2 {
+  position: relative;
+  margin: 0;
+  margin-bottom: 24px;
+  font-size: 35px;
+  line-height: 35px;
+  font-weight: 800;
+  z-index: 1;
+}
+
+.gallery__description-container h2::before {
+  position: absolute;
+  top: -17px;
+  left: 16.5%;
+  -webkit-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  transform: translateX(-50%);
+  font-size: 55px;
+  line-height: 55px;
+  font-weight: 800;
+  color: #2d383f;
+  opacity: 0.03;
+  z-index: -1;
+  content: attr(data-parent);
+}
+
+.gallery__description-container p {
+  margin: 0;
+  padding-right: 335px;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.gallery__inner {
+  position: relative;
+}
+
+.gallery__item {
+  max-width: 275px;
+  max-height: 449px;
+  height: auto;
+}
+
+.gallery__item--double {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  row-gap: 5px;
+  max-width: 298px;
+}
+
+.gallery__photo-container img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+  object-fit: cover;
+}
+
+.gallery__slider-buttons {
+  position: absolute;
+  right: 110px;
+  bottom: 111.4%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 /* @mixin hover-focus {
@@ -3223,6 +3315,10 @@ button,
   }
 
   .reviews__slider-buttons {
+    right: 20px;
+  }
+
+  .gallery__slider-buttons {
     right: 20px;
   }
 }
@@ -3758,6 +3854,7 @@ button,
   }
 
   .reviews__container {
+    padding-bottom: 73px;
     padding-left: 30px;
   }
 
@@ -3797,6 +3894,10 @@ button,
     line-height: 12px;
   }
 
+  .features {
+    margin-bottom: 3px;
+  }
+
   .features h2 {
     font-size: 25px;
     line-height: 25px;
@@ -3804,7 +3905,7 @@ button,
 
   .features h2::before {
     top: -13px;
-    left: 16.4%;
+    left: 28.4%;
     font-size: 40px;
     line-height: 40px;
   }
@@ -3813,8 +3914,25 @@ button,
     display: none;
   }
 
+  .features__slider {
+    padding: 0 45px;
+  }
+
+  .features__list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    gap: 30px;
+  }
+
   .features__item {
-    padding: 30px 20px;
+    max-width: 324px;
+    padding: 29px 20px;
   }
 
   .features__item h3 {
@@ -3836,6 +3954,38 @@ button,
   .features__badge-container svg {
     width: 20px;
     height: auto;
+  }
+
+  .features__slider-buttons {
+    display: none;
+  }
+
+  .gallery__description-container {
+    margin-bottom: 36px;
+  }
+
+  .gallery__description-container h2 {
+    margin-bottom: 24px;
+    font-size: 25px;
+    line-height: 25px;
+  }
+
+  .gallery__description-container h2::before {
+    top: -13px;
+    left: 21.4%;
+    font-size: 40px;
+    line-height: 40px;
+  }
+
+  .gallery__description-container p {
+    padding-right: 255px;
+    font-size: 14px;
+    line-height: 22px;
+  }
+
+  .gallery__slider-buttons {
+    right: 35px;
+    bottom: 112%;
   }
 }
 
@@ -4408,7 +4558,8 @@ button,
   }
 
   .reviews__container {
-    padding: 0;
+    padding-bottom: 17px;
+    padding-left: 0;
   }
 
   .reviews__slider-buttons {
@@ -4447,20 +4598,33 @@ button,
   }
 
   .features h2 {
-    margin-bottom: 33px;
+    margin-bottom: 29px;
     font-size: 22px;
     line-height: 22px;
   }
 
   .features h2::before {
     top: -4px;
-    left: 49.5%;
+    left: 15.6%;
     font-size: 26px;
     line-height: 26px;
   }
 
+  .features__container {
+    padding-bottom: 64px;
+  }
+
+  .features__slider {
+    padding: 0 15px;
+  }
+
+  .features__list {
+    gap: 15px;
+  }
+
   .features__item {
-    padding: 20px 10px;
+    max-width: unset;
+    padding: 19px 10px;
   }
 
   .features__item h3 {
@@ -4475,6 +4639,48 @@ button,
 
   .features__badge-container svg {
     width: 18px;
+  }
+
+  .gallery__description-container {
+    margin-bottom: 64px;
+  }
+
+  .gallery__description-container h2 {
+    margin-bottom: 15px;
+    font-size: 22px;
+    line-height: 22px;
+  }
+
+  .gallery__description-container h2::before {
+    top: -4px;
+    left: 49.5%;
+    width: 100%;
+    font-size: 26px;
+    line-height: 26px;
+  }
+
+  .gallery__description-container p {
+    padding-right: 0;
+    font-size: 12px;
+    line-height: 18px;
+  }
+
+  .gallery__item {
+    max-width: 159px;
+  }
+
+  .gallery__item--double {
+    row-gap: 3px;
+    max-width: 172px;
+  }
+
+  .gallery__photo-container img {
+    width: auto;
+  }
+
+  .gallery__slider-buttons {
+    right: 5px;
+    bottom: 105.8%;
   }
 }
 

@@ -79,7 +79,7 @@ const initReviewsSlider = new Swiper('[data-reviews-slider]', {
 const initGallerySlider = new Swiper('[data-gallery-slider]', {
   cssMode: true,
   loop: false,
-  slidesPerView: 1,
+  slidesPerView: 'auto',
   spaceBetween: 3,
   breakpoints: {
     768: {
@@ -88,7 +88,7 @@ const initGallerySlider = new Swiper('[data-gallery-slider]', {
     },
     1200: {
       slidesPerView: 'auto',
-      spaceBetween: 6,
+      spaceBetween: 5,
       allowTouchMove: false,
     },
   },

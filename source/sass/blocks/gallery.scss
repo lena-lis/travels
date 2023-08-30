@@ -1,25 +1,25 @@
 .gallery__description-container {
-  margin-bottom: 46px;
+  margin-bottom: 45px;
 
   @include vp-1199 {
-    margin-bottom: 37px;
+    margin-bottom: 36px;
   }
 
   @include vp-767 {
-    margin-bottom: 65px;
+    margin-bottom: 64px;
   }
 
   h2 {
     position: relative;
     margin: 0;
-    margin-bottom: 27px;
+    margin-bottom: 24px;
     font-size: 35px;
     line-height: 35px;
     font-weight: 800;
     z-index: 1;
 
     @include vp-1199 {
-      margin-bottom: 26px;
+      margin-bottom: 24px;
       font-size: 25px;
       line-height: 25px;
     }
@@ -33,7 +33,7 @@
     &::before {
       position: absolute;
       top: -17px;
-      left: 12.5%;
+      left: 16.5%;
       transform: translateX(-50%);
       font-size: 55px;
       line-height: 55px;
@@ -45,7 +45,7 @@
 
       @include vp-1199 {
         top: -13px;
-        left: 16.4%;
+        left: 21.4%;
         font-size: 40px;
         line-height: 40px;
       }
@@ -61,12 +61,13 @@
   }
 
   p {
+    margin: 0;
     padding-right: 335px;
     font-size: 16px;
     line-height: 24px;
 
     @include vp-1199 {
-      padding-right: 95px;
+      padding-right: 255px;
       font-size: 14px;
       line-height: 22px;
     }
@@ -83,8 +84,26 @@
   position: relative;
 }
 
-.gallery__slider {
-  width: 100%;
+.gallery__item {
+  max-width: 275px;
+  max-height: 449px;
+  height: auto;
+
+  @include vp-767 {
+    max-width: 159px;
+  }
+}
+
+.gallery__item--double {
+  display: flex;
+  flex-direction: column;
+  row-gap: 5px;
+  max-width: 298px;
+
+  @include vp-767 {
+    row-gap: 3px;
+    max-width: 172px;
+  }
 }
 
 .gallery__photo-container {
@@ -92,15 +111,9 @@
     width: 100%;
     height: 100%;
     object-fit: cover;
-  }
-
-  &--double {
-    display: flex;
-    flex-direction: column;
-    row-gap: 5px;
 
     @include vp-767 {
-      row-gap: 3px;
+      width: auto;
     }
   }
 }
@@ -108,7 +121,7 @@
 .gallery__slider-buttons {
   position: absolute;
   right: 110px;
-  bottom: 107.6%;
+  bottom: 111.4%;
   display: flex;
 
   @include vp-1439 {
@@ -117,11 +130,11 @@
 
   @include vp-1199 {
     right: 35px;
-    bottom: 106%;
+    bottom: 112%;
   }
 
   @include vp-767 {
     right: 5px;
-    bottom: 102.8%;
+    bottom: 105.8%;
   }
 }
