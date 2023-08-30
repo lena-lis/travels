@@ -1,6 +1,6 @@
 import Swiper from '../../vendor/swiper.js';
 
-const heroSlider = new Swiper('[data-hero-slider]', {
+const initHeroSlider = new Swiper('[data-hero-slider]', {
   loop: true,
   speed: 300,
   breakpoints: {
@@ -14,7 +14,7 @@ const heroSlider = new Swiper('[data-hero-slider]', {
   },
 });
 
-const toursSlider = new Swiper('[data-tours-slider]', {
+const initToursSlider = new Swiper('[data-tours-slider]', {
   loop: false,
   breakpoints: {
     768: {
@@ -33,7 +33,7 @@ const toursSlider = new Swiper('[data-tours-slider]', {
   },
 });
 
-const instructorsSlider = new Swiper('[data-instructors-slider]', {
+const initInstructorsSlider = new Swiper('[data-instructors-slider]', {
   loop: false,
   slidesPerView: 1,
   breakpoints: {
@@ -55,7 +55,7 @@ const instructorsSlider = new Swiper('[data-instructors-slider]', {
   slideNextClass: 'instructors__card--next',
 });
 
-const reviewsSlider = new Swiper('[data-reviews-slider]', {
+const initReviewsSlider = new Swiper('[data-reviews-slider]', {
   cssMode: true,
   loop: false,
   slidesPerView: 1,
@@ -76,4 +76,26 @@ const reviewsSlider = new Swiper('[data-reviews-slider]', {
   },
 });
 
-export {heroSlider, toursSlider, instructorsSlider, reviewsSlider};
+const initGallerySlider = new Swiper('[data-gallery-slider]', {
+  cssMode: true,
+  loop: false,
+  slidesPerView: 1,
+  spaceBetween: 3,
+  breakpoints: {
+    768: {
+      slidesPerView: 'auto',
+      spaceBetween: 6,
+    },
+    1200: {
+      slidesPerView: 'auto',
+      spaceBetween: 6,
+      allowTouchMove: false,
+    },
+  },
+  navigation: {
+    prevEl: '.gallery__button--prev',
+    nextEl: '.gallery__button--next',
+  },
+});
+
+export {initHeroSlider, initToursSlider, initInstructorsSlider, initReviewsSlider, initGallerySlider};
