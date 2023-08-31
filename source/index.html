@@ -1130,6 +1130,36 @@
           </div>
         </section>
 
+        <!-- Форма для доп. информации -->
+
+        <section class="info" id="info">
+          <div class="info__background-container">
+            <picture>
+              <source srcset="img/info/info-desktop.webp 1x, img/info/info-desktop@2x.webp 2x" type="image/webp" media="(min-width: 1200px)">
+              <source srcset="img/info/info-tablet.webp 1x, img/info/info-tablet@2x.webp 2x" type="image/webp" media="(min-width: 768px)">
+              <source srcset="img/info/info-mobile.webp 1x, img/info/info-mobile@2x.webp 2x" type="image/webp">
+
+              <source srcset="img/info/info-desktop.jpg 1x, img/info/info-desktop@2x.jpg 2x" width="1440" height="800" type="image/webp" media="(min-width: 1200px)">
+              <source srcset="img/info/info-tablet.jpg 1x, img/info/info-tablet@2x.jpg 2x" width="768" height="689" type="image/webp" media="(min-width: 768px)">
+              <img src="img/info/info-mobile.jpg" width="320" height="621" srcset="img/info/info-mobile@2x.jpg 2x" alt="Горы в облаках.">
+            </picture>
+          </div>
+          <div class="info__container" data-form-validate="data-form-validate" data-callback="base">
+            <h2>Остались вопросы?</h2>
+            <p>Заполните форму и&nbsp;наш оператор свяжется с&nbsp;вами для консультации.</p>
+            <form action="https://echo.htmlacademy.ru/" method="post">
+              <div class="info__input-container" data-validate-type="text" data-limitation="name" data-required="data-required">
+                <label class="visually-hidden" for="name">Имя</label>
+                <input type="text" id="name" name="name" placeholder="Как к вам обращаться?" pattern="[А-Яа-яЁёa-zA-Z\- ]{1,}" required>
+              </div>
+              <div class="info__input-container" data-validate-type="phone" data-on-input-validate="data-on-input-validate" data-required="data-required">
+                <label class="visually-hidden" for="tel">Телефон</label>
+                <input type="tel" id="tel" name="tel" placeholder="Телефон" pattern="^((\+7)[\ ]?)?(\(?\d{3}\)?[\ ]?)?[\d\ ]{10}$" required>
+              </div>
+              <button class="btn" type="submit">Отправить</button>
+            </form>
+          </div>
+        </section>
       </main>
 
       <footer class="main-footer">
