@@ -3202,6 +3202,8 @@ button,
 .info__background-container img {
   width: 100%;
   height: 100%;
+  -o-object-fit: cover;
+  object-fit: cover;
 }
 
 .info__container {
@@ -3419,6 +3421,42 @@ button,
 
 .info__input-container.is-invalid input {
   border-color: #ff121f;
+}
+
+.contacts__container {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 33.5% 40.4%;
+  grid-template-columns: 33.5% 40.4%;
+  -webkit-column-gap: 132px;
+  -moz-column-gap: 132px;
+  column-gap: 132px;
+}
+
+.contacts__description h2 {
+  position: relative;
+  margin: 0;
+  margin-bottom: 12px;
+  font-size: 35px;
+  line-height: 35px;
+  font-weight: 800;
+  z-index: 1;
+}
+
+.contacts__description h2::before {
+  position: absolute;
+  top: -17px;
+  left: 10%;
+  -webkit-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  transform: translateX(-50%);
+  font-size: 55px;
+  line-height: 55px;
+  font-weight: 800;
+  color: #2d383f;
+  opacity: 0.03;
+  z-index: -1;
+  content: attr(data-parent);
 }
 
 /* @mixin hover-focus {
@@ -4246,6 +4284,7 @@ button,
   }
 
   .info__container {
+    min-height: 679px;
     padding: 195px 236px 0;
   }
 
@@ -4259,6 +4298,7 @@ button,
   .info__container p {
     margin-right: 0;
     margin-bottom: 29px;
+    text-align: center;
   }
 
   .info__container form {
@@ -4288,6 +4328,19 @@ button,
 
   .info__input-container {
     margin-bottom: 7px;
+  }
+
+  .contacts__description h2 {
+    margin-bottom: 12px;
+    font-size: 25px;
+    line-height: 25px;
+  }
+
+  .contacts__description h2::before {
+    top: -13px;
+    left: 16.4%;
+    font-size: 40px;
+    line-height: 40px;
   }
 }
 
@@ -4984,14 +5037,45 @@ button,
     bottom: 105.8%;
   }
 
+  .info__container {
+    min-height: 621px;
+    padding: 181px 15px 0;
+  }
+
   .info__container h2 {
+    margin-bottom: 15px;
     font-size: 22px;
     line-height: 22px;
   }
 
   .info__container p {
+    margin-bottom: 25px;
     font-size: 12px;
     line-height: 18px;
+  }
+
+  .info__container form {
+    padding: 0;
+  }
+
+  .info__container button {
+    margin-top: 1px;
+    padding: 18px 21px;
+    padding-bottom: 16px;
+  }
+
+  .contacts__description h2 {
+    margin-bottom: 17px;
+    font-size: 22px;
+    line-height: 22px;
+  }
+
+  .contacts__description h2::before {
+    top: -4px;
+    left: 49.5%;
+    width: 100%;
+    font-size: 26px;
+    line-height: 26px;
   }
 }
 
