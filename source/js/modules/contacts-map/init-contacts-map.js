@@ -2,7 +2,7 @@ import L from '../../vendor/leaflet';
 
 const mapContainer = document.querySelector('[data-contacts-map]');
 
-const initContactsMap = () =>  {
+const initContactsMap = () => {
   if (!mapContainer) {
     return;
   }
@@ -18,8 +18,7 @@ const initContactsMap = () =>  {
   });
 
   const tile = L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
-    attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
-  });
+    attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'});
   tile.addTo(map);
 
   const customIcon = L.icon({
@@ -27,7 +26,7 @@ const initContactsMap = () =>  {
     iconSize: [48, 48],
   });
 
-  const marker = L.marker([59.9682871, 30.3176164], {icon: customIcon}).bindPopup('г. Москва, пр-т Мира, д. 14, офис 101');
+  const marker = L.marker([55.7748763, 37.6326415], {icon: customIcon}).bindPopup('г. Москва, пр-т Мира, д. 14, офис 101');
   marker.addTo(map);
 };
 
