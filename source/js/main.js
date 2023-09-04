@@ -3,6 +3,7 @@ import {Form} from './modules/form-validate/form';
 import {menuToggle} from './modules/menu-toggle/menu-toggle';
 import {setEventListener} from './modules/play/play-audio';
 import {initVideo} from './modules/play/play-video';
+import {initContactsMap} from './modules/contacts-map/init-contacts-map';
 import './modules/slider/slider.js';
 import './modules/slider/features-slider.js';
 
@@ -24,6 +25,7 @@ window.addEventListener('DOMContentLoaded', () => {
     menuToggle();
     initVideo();
     setEventListener();
+    initContactsMap();
     const form = new Form();
     window.form = form;
     form.init();
