@@ -2817,6 +2817,10 @@ button,
   background-color: #ffffff;
 }
 
+.main-header__container:has(.main-navigation--nojs) .main-header__logo {
+  color: #2d383f;
+}
+
 .main-header__container:has(.main-navigation--opened) {
   position: fixed;
   background-color: #ffffff;
@@ -5481,6 +5485,12 @@ button,
   .main-navigation__toggle {
     width: 30px;
     height: 30px;
+  }
+
+  .main-navigation--nojs {
+    -webkit-column-gap: 50px;
+    -moz-column-gap: 50px;
+    column-gap: 50px;
   }
 
   .main-navigation--closed .main-navigation__toggle-icon {

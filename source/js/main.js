@@ -1,7 +1,7 @@
 import {iosVhFix} from './utils/ios-vh-fix';
 import {Form} from './modules/form-validate/form';
-import {menuToggle} from './modules/menu-toggle/menu-toggle';
-import {initAudioPlayer, setEventListener} from './modules/play/play-audio';
+import {onNavToggleClick} from './modules/menu-toggle/menu-toggle.js';
+import {initAudioPlayer} from './modules/play/play-audio';
 import {initVideo} from './modules/play/play-video';
 import {initContactsMap} from './modules/contacts-map/init-contacts-map';
 import './modules/slider/slider.js';
@@ -22,7 +22,7 @@ window.addEventListener('DOMContentLoaded', () => {
   // все скрипты должны быть в обработчике 'DOMContentLoaded', но не все в 'load'
   // в load следует добавить скрипты, не участвующие в работе первого экрана
   window.addEventListener('load', () => {
-    menuToggle();
+    onNavToggleClick();
     initVideo();
     initAudioPlayer();
     initContactsMap();

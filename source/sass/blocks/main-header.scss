@@ -67,6 +67,10 @@
 .main-header__container:has(.main-navigation--nojs) {
   position: unset;
   background-color: $color-default-white;
+
+  .main-header__logo {
+    color: $color-elephant;
+  }
 }
 
 .main-header__container:has(.main-navigation--opened) {
