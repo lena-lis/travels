@@ -40,7 +40,7 @@ const initContactsMap = () => {
   //   });
   // }
 
-  const marker = L.marker([55.7748763, 37.6326415], {icon: customIcon,}).bindPopup('г. Москва, пр-т Мира, д. 14, офис 101');
+  const marker = L.marker([55.7748763, 37.6326415], {icon: customIcon}).bindPopup('г. Москва, пр-т Мира, д. 14, офис 101');
   marker.addTo(map);
 };
 

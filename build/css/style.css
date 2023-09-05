@@ -2532,6 +2532,8 @@ button,
 .hero__background-container img {
   width: 100%;
   height: 100%;
+  -o-object-fit: cover;
+  object-fit: cover;
 }
 
 .hero__video-container {
@@ -2655,8 +2657,10 @@ button,
   color: #0266c1;
 }
 
-.hero__audio-button:focus {
+.hero__audio-button:focus,
+.hero__audio-button:focus-visible {
   color: rgba(0, 0, 0, 0.5);
+  outline: none;
 }
 
 .hero__pagination {
@@ -2702,6 +2706,10 @@ button,
   display: flex;
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
+}
+
+.main-footer__navigation li {
+  padding: 21px 10px 19px;
 }
 
 .main-footer__navigation a {
@@ -3292,6 +3300,10 @@ button,
   -ms-flex-pack: center;
   justify-content: center;
   gap: 12px;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  margin: 0 auto;
   font-size: 16px;
   line-height: 16px;
   font-weight: 700;
@@ -3316,13 +3328,13 @@ button,
 }
 
 .education__container {
+  max-width: 1920px;
+  margin: 0 auto;
   margin-bottom: 95px;
   padding-top: 3px;
 }
 
 .education__container h3 {
-  margin: 0;
-  margin-bottom: 12px;
   padding: 0 120px;
   font-size: 21px;
   line-height: 21px;
@@ -3368,11 +3380,17 @@ button,
   margin-bottom: 21px;
 }
 
+.education__instructors-container h3 {
+  margin: 0;
+  margin-bottom: 12px;
+}
+
 .education__process-container {
   border-bottom: 1px solid rgba(2, 102, 193, 0.2);
 }
 
 .education__process-container h3 {
+  margin: 0;
   margin-bottom: 41px;
 }
 
@@ -3550,6 +3568,9 @@ button,
 
 .about {
   position: relative;
+  max-width: 1920px;
+  min-height: 474px;
+  margin: 0 auto;
   margin-bottom: 121px;
 }
 
@@ -3657,6 +3678,8 @@ button,
 
 .reviews__container {
   position: relative;
+  max-width: 1920px;
+  margin: 0 auto;
   padding-bottom: 121px;
   padding-left: 105px;
 }
@@ -3664,7 +3687,7 @@ button,
 .reviews__slider-buttons {
   position: absolute;
   right: 110px;
-  bottom: 107.6%;
+  bottom: 105.6%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -3760,6 +3783,8 @@ button,
 
 .features {
   position: relative;
+  max-width: 1920px;
+  margin: 0 auto;
   margin-bottom: 130px;
 }
 
@@ -3792,12 +3817,12 @@ button,
 }
 
 .features__clouds-container--left {
-  top: -39%;
+  top: -48%;
   left: 0;
 }
 
 .features__clouds-container--right {
-  top: -9%;
+  top: -11%;
   right: 0;
 }
 
@@ -3906,6 +3931,8 @@ button,
 
 .gallery__inner {
   position: relative;
+  max-width: 1920px;
+  margin: 0 auto;
 }
 
 .gallery__item {
@@ -3978,7 +4005,9 @@ button,
   flex-direction: column;
   -ms-flex-line-pack: center;
   align-content: center;
+  max-width: 1920px;
   min-height: 800px;
+  margin: 0 auto;
   padding: 0 231px;
   padding-top: 312px;
 }
@@ -4560,7 +4589,7 @@ button,
   }
 
   .main-footer__logo-container {
-    margin-right: 73px;
+    margin-right: 70px;
   }
 
   .main-footer__logo svg {
@@ -4569,7 +4598,7 @@ button,
   }
 
   .main-footer__navigation li {
-    padding: 17px 5px 20px 4px;
+    padding: 16px 5px 21px 4px;
     font-size: 14px;
     line-height: 14px;
   }
@@ -4786,7 +4815,6 @@ button,
   }
 
   .education__container h3 {
-    margin-bottom: 2px;
     padding: 0 45px;
     font-size: 18px;
     line-height: 18px;
@@ -4816,6 +4844,10 @@ button,
 
   .education__instructors-container {
     margin-bottom: 13px;
+  }
+
+  .education__instructors-container h3 {
+    margin-bottom: 2px;
   }
 
   .education__process-container {
@@ -4918,6 +4950,7 @@ button,
   }
 
   .about {
+    min-height: unset;
     margin-bottom: 90px;
   }
 
@@ -4945,7 +4978,7 @@ button,
 
   .about__content h2::before {
     top: -13px;
-    left: 16.4%;
+    left: 18.4%;
     font-size: 40px;
     line-height: 40px;
   }
@@ -4965,13 +4998,14 @@ button,
 
   .reviews h2 {
     margin-bottom: 12px;
+    margin-left: 1px;
     font-size: 25px;
     line-height: 25px;
   }
 
   .reviews h2::before {
     top: -13px;
-    left: 16.4%;
+    left: 12.6%;
     font-size: 40px;
     line-height: 40px;
   }
@@ -4983,7 +5017,7 @@ button,
 
   .reviews__slider-buttons {
     right: 35px;
-    bottom: 106%;
+    bottom: 104.6%;
   }
 
   .reviews__item {
@@ -5350,7 +5384,7 @@ button,
   }
 
   .main-footer__logo-container {
-    margin: 0 0 16px 3px;
+    margin: 0 0 16px 6px;
   }
 
   .main-footer__navigation {
@@ -5449,6 +5483,10 @@ button,
     height: 30px;
   }
 
+  .main-navigation--closed .main-navigation__toggle-icon {
+    top: 21px;
+  }
+
   .main-navigation--opened {
     -webkit-column-gap: 32px;
     -moz-column-gap: 32px;
@@ -5531,9 +5569,9 @@ button,
   }
 
   .tours__info-container--caucasus {
-    -webkit-column-gap: 17px;
-    -moz-column-gap: 17px;
-    column-gap: 17px;
+    -webkit-column-gap: 25px;
+    -moz-column-gap: 25px;
+    column-gap: 25px;
     row-gap: 15px;
   }
 
@@ -5545,10 +5583,14 @@ button,
   }
 
   .tours__info-container--adygea {
-    -webkit-column-gap: 17px;
-    -moz-column-gap: 17px;
-    column-gap: 17px;
+    -webkit-column-gap: 20px;
+    -moz-column-gap: 20px;
+    column-gap: 20px;
     row-gap: 15px;
+  }
+
+  .tours__info-container--adygea p:first-of-type {
+    padding-right: 20px;
   }
 
   .tours__features-container td {
@@ -5571,6 +5613,8 @@ button,
   }
 
   .tours__link {
+    gap: 10px;
+    padding-left: 2px;
     font-size: 14px;
     line-height: 14px;
     letter-spacing: 0.56px;
@@ -5581,7 +5625,6 @@ button,
   }
 
   .education__container h3 {
-    margin-bottom: 3px;
     padding: 0 15px;
     font-size: 16px;
     line-height: 16px;
@@ -5614,6 +5657,10 @@ button,
 
   .education__instructors-container {
     margin-bottom: 8px;
+  }
+
+  .education__instructors-container h3 {
+    margin-bottom: 3px;
   }
 
   .education__process-container h3 {
@@ -5654,9 +5701,8 @@ button,
 
   .education__process-container li:first-of-type + li::after {
     top: 20px;
-    right: 107.5%;
     bottom: unset;
-    left: unset;
+    left: -26px;
     width: 10px;
     height: 100%;
   }
@@ -5696,7 +5742,7 @@ button,
   .education__process-container li::after {
     position: absolute;
     top: 20px;
-    right: 107.5%;
+    left: -26px;
     width: 10px;
     height: 100%;
     border-left: 1px solid rgba(2, 102, 193, 0.1);
@@ -5797,6 +5843,7 @@ button,
 
   .reviews h2 {
     margin-bottom: 17px;
+    margin-left: 0;
     font-size: 22px;
     line-height: 22px;
   }
