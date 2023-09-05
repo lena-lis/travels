@@ -1,3 +1,5 @@
+import '../../utils/scroll-lock';
+
 const menuToggle = () => {
   const navMenuOverlay = document.querySelector('[data-menu-overlay]');
   const navMain = document.querySelector('[data-nav-main]');
@@ -13,10 +15,12 @@ const menuToggle = () => {
         navMain.classList.remove('main-navigation--closed');
         navMain.classList.add('main-navigation--opened');
         navMenuOverlay.style.display = 'block';
+        window.scrollLock.disableScrolling();
       } else {
         navMain.classList.add('main-navigation--closed');
         navMain.classList.remove('main-navigation--opened');
         navMenuOverlay.style.display = 'none';
+        window.scrollLock.enableScrolling();
       }
     });
   }
