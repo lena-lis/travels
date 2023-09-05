@@ -30,11 +30,11 @@
   margin-right: 89px;
 
   @include vp-1199 {
-    margin-right: 73px;
+    margin-right: 70px;
   }
 
   @include vp-767 {
-    margin: 0 0 16px 3px;
+    margin: 0 0 16px 6px;
   }
 }
 
@@ -74,8 +74,10 @@
   }
 
   li {
+    padding: 21px 10px 19px;
+
     @include vp-1199 {
-      padding: 17px 5px 20px 4px;
+      padding: 16px 5px 21px 4px;
       font-size: 14px;
       line-height: 14px;
     }

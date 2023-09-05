@@ -1,5 +1,7 @@
 .features {
   position: relative;
+  max-width: 1920px;
+  margin: 0 auto;
   margin-bottom: 130px;
 
   @include vp-1199 {
@@ -64,12 +66,12 @@
   }
 
   &--left {
-    top: -39%;
+    top: -48%;
     left: 0;
   }
 
   &--right {
-    top: -9%;
+    top: -11%;
     right: 0;
   }
 }

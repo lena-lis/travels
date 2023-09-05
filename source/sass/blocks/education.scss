@@ -1,4 +1,6 @@
 .education__container {
+  max-width: 1920px;
+  margin: 0 auto;
   margin-bottom: 95px;
   padding-top: 3px;
 
@@ -11,8 +13,6 @@
   }
 
   h3 {
-    margin: 0;
-    margin-bottom: 12px;
     padding: 0 120px;
     font-size: 21px;
     line-height: 21px;
@@ -22,14 +22,12 @@
     }
 
     @include vp-1199 {
-      margin-bottom: 2px;
       padding: 0 45px;
       font-size: 18px;
       line-height: 18px;
     }
 
     @include vp-767 {
-      margin-bottom: 3px;
       padding: 0 15px;
       font-size: 16px;
       line-height: 16px;
@@ -128,6 +126,19 @@
   @include vp-767 {
     margin-bottom: 8px;
   }
+
+  h3 {
+    margin: 0;
+    margin-bottom: 12px;
+
+    @include vp-1199 {
+      margin-bottom: 2px;
+    }
+
+    @include vp-767 {
+      margin-bottom: 3px;
+    }
+  }
 }
 
 .education__process-container {
@@ -138,6 +149,7 @@
   }
 
   h3 {
+    margin: 0;
     margin-bottom: 41px;
 
     @include vp-767 {
@@ -239,9 +251,8 @@
 
       @include vp-767 {
       top: 20px;
-      right: 107.5%;
       bottom: unset;
-      left: unset;
+      left: -26px;
       width: 10px;
       height: 100%;
       }
@@ -314,7 +325,7 @@
     @include vp-767 {
       position: absolute;
       top: 20px;
-      right: 107.5%;
+      left: -26px;
       width: 10px;
       height: 100%;
       border-left: 1px solid $color-navy-blue-opacity;

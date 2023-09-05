@@ -19,9 +19,11 @@ function onButtonPlayAudio() {
   audioButton.removeEventListener('click', onButtonPlayAudio);
 }
 
-export const setEventListener = () => {
+const initAudioPlayer = () => {
   if (!audioContainer) {
     return;
   }
   audioButton.addEventListener('click', onButtonPlayAudio);
 };
+
+export {initAudioPlayer};

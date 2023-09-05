@@ -239,6 +239,7 @@
   img {
     width: 100%;
     height: 100%;
+    object-fit: cover;
   }
 
   @include vp-767 {
@@ -417,8 +418,10 @@
     color: $color-navy-blue;
   }
 
-  &:focus {
+  &:focus,
+  &:focus-visible {
     color: $color-black-opacity;
+    outline: none;
   }
 }
 
