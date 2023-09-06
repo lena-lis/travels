@@ -2311,10 +2311,13 @@ button,
   transition: opacity 0.3s ease;
 }
 
-.btn.focus-visible:focus {
+.btn:hover,
+.btn:focus,
+.btnfocus-visible {
   color: #1c3374;
   background-color: rgba(255, 255, 255, 0);
   border-color: #1c3374;
+  outline: none;
 }
 
 .btn:active {
@@ -2417,9 +2420,6 @@ button,
 .section-title__container h2::before {
   position: absolute;
   top: -17px;
-  -webkit-transform: translateX(-50%);
-  -ms-transform: translateX(-50%);
-  transform: translateX(-50%);
   font-size: 55px;
   line-height: 55px;
   font-weight: 800;
@@ -3099,7 +3099,7 @@ button,
 .tours__container {
   position: relative;
   padding-top: 123px;
-  padding-bottom: 121px;
+  padding-bottom: 101px;
 }
 
 .tours__container h2 {
@@ -3108,7 +3108,7 @@ button,
 }
 
 .tours__container h2::before {
-  left: 22.5%;
+  left: 0;
 }
 
 .tours__container br {
@@ -3116,7 +3116,7 @@ button,
 }
 
 .tours__slider {
-  margin-bottom: 53px;
+  margin-bottom: 33px;
 }
 
 .tours_list .tours__item {
@@ -3314,6 +3314,7 @@ button,
   width: -moz-fit-content;
   width: fit-content;
   margin: 0 auto;
+  padding: 20px;
   font-size: 16px;
   line-height: 16px;
   font-weight: 700;
@@ -3360,7 +3361,7 @@ button,
 }
 
 .education__description-container h2::before {
-  left: 12.5%;
+  left: 0;
 }
 
 .education__description-container p {
@@ -3564,7 +3565,7 @@ button,
   max-width: 1920px;
   min-height: 474px;
   margin: 0 auto;
-  margin-bottom: 121px;
+  margin-bottom: 53px;
 }
 
 .about__clouds-container {
@@ -3604,7 +3605,7 @@ button,
 }
 
 .about__content h2::before {
-  left: 14.5%;
+  left: 0;
 }
 
 .about__content h3 {
@@ -3632,7 +3633,7 @@ button,
 }
 
 .reviews h2::before {
-  left: 10%;
+  left: 0;
 }
 
 .reviews__container {
@@ -3847,7 +3848,7 @@ button,
 }
 
 .gallery__description-container h2::before {
-  left: 16.5%;
+  left: 0;
 }
 
 .gallery__description-container p {
@@ -4160,7 +4161,7 @@ button,
 }
 
 .contacts__description h2::before {
-  left: 30%;
+  left: 0;
 }
 
 .contacts__description p {
@@ -5932,13 +5933,5 @@ button,
 
   .contacts__map {
     min-height: 320px;
-  }
-}
-
-@media (hover: hover) {
-  .btn:hover:not(.focus-visible) {
-    color: #1c3374;
-    background-color: rgba(255, 255, 255, 0);
-    border-color: #1c3374;
   }
 }

@@ -3,7 +3,7 @@
   max-width: 1920px;
   min-height: 474px;
   margin: 0 auto;
-  margin-bottom: 121px;
+  margin-bottom: 53px;
 
   @include vp-1199 {
     min-height: unset;
@@ -91,7 +91,7 @@
     }
 
     &::before {
-      left: 14.5%;
+      left: 0;
 
       @include vp-1199 {
         left: 18.4%;

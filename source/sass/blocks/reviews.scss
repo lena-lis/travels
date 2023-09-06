@@ -14,7 +14,7 @@
     }
 
     &::before {
-      left: 10%;
+      left: 0;
 
       @include vp-1199 {
         left: 12.6%;

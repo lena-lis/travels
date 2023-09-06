@@ -13,10 +13,13 @@
 
   transition: opacity $trans-default;
 
-  @include hover-focus {
+  &:hover,
+  &:focus,
+  &focus-visible {
     color: $color-resolution-blue;
     background-color: $color-transparent;
     border-color: $color-resolution-blue;
+    outline: none;
   }
 
   &:active {
