@@ -15,15 +15,6 @@
 
     &::before {
       left: 0;
-
-      @include vp-1199 {
-        left: 12.6%;
-      }
-
-      @include vp-767 {
-        left: 49.5%;
-        width: 100%;
-      }
     }
   }
 }
