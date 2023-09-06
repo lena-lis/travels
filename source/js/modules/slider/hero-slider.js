@@ -18,7 +18,6 @@ initHeroSlider.on('afterInit', catchActiveSlideFocus());
 
 function catchActiveSlideFocus() {
   const heroSlides = document.querySelectorAll('.hero__item');
-  const activeHeroSlide = document.querySelector('.hero__item.swiper-slide-active');
 
   if (!activeHeroSlide) {
     return;
@@ -26,5 +25,6 @@ function catchActiveSlideFocus() {
 
   const focusableSlides = Array.from(heroSlides).filter((heroSlide) => !heroSlide.classList.contains('swiper-slide-active'));
   focusableSlides.forEach((element) => element.setAttribute('inert', true));
+  const activeHeroSlide = document.querySelector('.hero__item.swiper-slide-active');
   activeHeroSlide.removeAttribute('inert');
 }
