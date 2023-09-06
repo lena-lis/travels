@@ -5,6 +5,7 @@ import {initAudioPlayer} from './modules/play/play-audio';
 import {initVideo} from './modules/play/play-video';
 import {initContactsMap} from './modules/contacts-map/init-contacts-map';
 import './modules/slider/slider.js';
+import './modules/slider/hero-slider.js';
 import './modules/slider/features-slider.js';
 
 // ---------------------------------

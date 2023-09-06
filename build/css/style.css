@@ -2406,6 +2406,29 @@ button,
   color: #0266c1;
 }
 
+.section-title__container h2 {
+  position: relative;
+  font-size: 35px;
+  line-height: 35px;
+  font-weight: 800;
+  z-index: 1;
+}
+
+.section-title__container h2::before {
+  position: absolute;
+  top: -17px;
+  -webkit-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  transform: translateX(-50%);
+  font-size: 55px;
+  line-height: 55px;
+  font-weight: 800;
+  color: #2d383f;
+  opacity: 0.03;
+  z-index: -1;
+  content: attr(data-parent);
+}
+
 .hero__slider {
   position: relative;
 }
@@ -3080,29 +3103,12 @@ button,
 }
 
 .tours__container h2 {
-  position: relative;
   margin: 0;
   margin-bottom: 54px;
-  font-size: 35px;
-  line-height: 35px;
-  font-weight: 800;
-  z-index: 1;
 }
 
 .tours__container h2::before {
-  position: absolute;
-  top: -17px;
   left: 22.5%;
-  -webkit-transform: translateX(-50%);
-  -ms-transform: translateX(-50%);
-  transform: translateX(-50%);
-  font-size: 55px;
-  line-height: 55px;
-  font-weight: 800;
-  color: #2d383f;
-  opacity: 0.03;
-  z-index: -1;
-  content: attr(data-parent);
 }
 
 .tours__container br {
@@ -3349,29 +3355,12 @@ button,
 }
 
 .education__description-container h2 {
-  position: relative;
   margin: 0;
   margin-bottom: 32px;
-  font-size: 35px;
-  line-height: 35px;
-  font-weight: 800;
-  z-index: 1;
 }
 
 .education__description-container h2::before {
-  position: absolute;
-  top: -17px;
   left: 12.5%;
-  -webkit-transform: translateX(-50%);
-  -ms-transform: translateX(-50%);
-  transform: translateX(-50%);
-  font-size: 55px;
-  line-height: 55px;
-  font-weight: 800;
-  color: #2d383f;
-  opacity: 0.03;
-  z-index: -1;
-  content: attr(data-parent);
 }
 
 .education__description-container p {
@@ -3610,29 +3599,12 @@ button,
 }
 
 .about__content h2 {
-  position: relative;
   margin: 0;
   margin-bottom: 57px;
-  font-size: 35px;
-  line-height: 35px;
-  font-weight: 800;
-  z-index: 1;
 }
 
 .about__content h2::before {
-  position: absolute;
-  top: -17px;
   left: 14.5%;
-  -webkit-transform: translateX(-50%);
-  -ms-transform: translateX(-50%);
-  transform: translateX(-50%);
-  font-size: 55px;
-  line-height: 55px;
-  font-weight: 800;
-  color: #2d383f;
-  opacity: 0.03;
-  z-index: -1;
-  content: attr(data-parent);
 }
 
 .about__content h3 {
@@ -3655,29 +3627,12 @@ button,
 }
 
 .reviews h2 {
-  position: relative;
   margin: 0;
   margin-bottom: 12px;
-  font-size: 35px;
-  line-height: 35px;
-  font-weight: 800;
-  z-index: 1;
 }
 
 .reviews h2::before {
-  position: absolute;
-  top: -17px;
   left: 10%;
-  -webkit-transform: translateX(-50%);
-  -ms-transform: translateX(-50%);
-  transform: translateX(-50%);
-  font-size: 55px;
-  line-height: 55px;
-  font-weight: 800;
-  color: #2d383f;
-  opacity: 0.03;
-  z-index: -1;
-  content: attr(data-parent);
 }
 
 .reviews__container {
@@ -3793,27 +3748,13 @@ button,
 }
 
 .features h2 {
-  position: relative;
   margin: 0;
   margin-bottom: 47px;
-  font-size: 35px;
-  line-height: 35px;
-  font-weight: 800;
   text-align: center;
-  z-index: 1;
 }
 
 .features h2::before {
-  position: absolute;
-  top: -17px;
   left: 34%;
-  font-size: 55px;
-  line-height: 55px;
-  font-weight: 800;
-  color: #2d383f;
-  opacity: 0.03;
-  z-index: -1;
-  content: attr(data-parent);
 }
 
 .features__clouds-container {
@@ -3901,29 +3842,12 @@ button,
 }
 
 .gallery__description-container h2 {
-  position: relative;
   margin: 0;
   margin-bottom: 24px;
-  font-size: 35px;
-  line-height: 35px;
-  font-weight: 800;
-  z-index: 1;
 }
 
 .gallery__description-container h2::before {
-  position: absolute;
-  top: -17px;
   left: 16.5%;
-  -webkit-transform: translateX(-50%);
-  -ms-transform: translateX(-50%);
-  transform: translateX(-50%);
-  font-size: 55px;
-  line-height: 55px;
-  font-weight: 800;
-  color: #2d383f;
-  opacity: 0.03;
-  z-index: -1;
-  content: attr(data-parent);
 }
 
 .gallery__description-container p {
@@ -4231,29 +4155,12 @@ button,
 }
 
 .contacts__description h2 {
-  position: relative;
   margin: 0;
   margin-bottom: 23px;
-  font-size: 35px;
-  line-height: 35px;
-  font-weight: 800;
-  z-index: 1;
 }
 
 .contacts__description h2::before {
-  position: absolute;
-  top: -17px;
   left: 30%;
-  -webkit-transform: translateX(-50%);
-  -ms-transform: translateX(-50%);
-  transform: translateX(-50%);
-  font-size: 55px;
-  line-height: 55px;
-  font-weight: 800;
-  color: #2d383f;
-  opacity: 0.03;
-  z-index: -1;
-  content: attr(data-parent);
 }
 
 .contacts__description p {
@@ -4496,6 +4403,17 @@ button,
   .logo__link svg {
     width: 144px;
     height: 44px;
+  }
+
+  .section-title__container h2 {
+    font-size: 25px;
+    line-height: 25px;
+  }
+
+  .section-title__container h2::before {
+    top: -13px;
+    font-size: 40px;
+    line-height: 40px;
   }
 
   .hero__content {
@@ -4743,16 +4661,11 @@ button,
   .tours__container h2 {
     margin-bottom: 43px;
     margin-left: -6px;
-    font-size: 24px;
-    line-height: 25px;
     letter-spacing: 0.64px;
   }
 
   .tours__container h2::before {
-    top: -13px;
     left: 28.5%;
-    font-size: 40px;
-    line-height: 40px;
   }
 
   .tours__content {
@@ -4830,16 +4743,11 @@ button,
 
   .education__description-container h2 {
     margin-bottom: 21px;
-    font-size: 24px;
-    line-height: 25px;
     letter-spacing: 0.64px;
   }
 
   .education__description-container h2::before {
-    top: -13px;
     left: 16.4%;
-    font-size: 40px;
-    line-height: 40px;
   }
 
   .education__description-container p {
@@ -4976,15 +4884,10 @@ button,
 
   .about__content h2 {
     margin-bottom: 35px;
-    font-size: 25px;
-    line-height: 25px;
   }
 
   .about__content h2::before {
-    top: -13px;
     left: 18.4%;
-    font-size: 40px;
-    line-height: 40px;
   }
 
   .about__content h3 {
@@ -5003,15 +4906,10 @@ button,
   .reviews h2 {
     margin-bottom: 12px;
     margin-left: 1px;
-    font-size: 25px;
-    line-height: 25px;
   }
 
   .reviews h2::before {
-    top: -13px;
     left: 12.6%;
-    font-size: 40px;
-    line-height: 40px;
   }
 
   .reviews__container {
@@ -5059,16 +4957,8 @@ button,
     margin-bottom: 3px;
   }
 
-  .features h2 {
-    font-size: 25px;
-    line-height: 25px;
-  }
-
   .features h2::before {
-    top: -13px;
     left: 28.4%;
-    font-size: 40px;
-    line-height: 40px;
   }
 
   .features__clouds-container {
@@ -5127,15 +5017,10 @@ button,
 
   .gallery__description-container h2 {
     margin-bottom: 24px;
-    font-size: 25px;
-    line-height: 25px;
   }
 
   .gallery__description-container h2::before {
-    top: -13px;
     left: 21.4%;
-    font-size: 40px;
-    line-height: 40px;
   }
 
   .gallery__description-container p {
@@ -5223,15 +5108,10 @@ button,
 
   .contacts__description h2 {
     margin-bottom: 18px;
-    font-size: 25px;
-    line-height: 25px;
   }
 
   .contacts__description h2::before {
-    top: -13px;
     left: 15.6%;
-    font-size: 40px;
-    line-height: 40px;
   }
 
   .contacts__description p {
@@ -5304,6 +5184,17 @@ button,
   .logo__link svg {
     width: 112px;
     height: 34px;
+  }
+
+  .section-title__container h2 {
+    font-size: 22px;
+    line-height: 22px;
+  }
+
+  .section-title__container h2::before {
+    top: -4px;
+    font-size: 26px;
+    line-height: 26px;
   }
 
   .hero__item {
@@ -5515,17 +5406,12 @@ button,
     width: 100%;
     margin-bottom: 27px;
     margin-left: 0;
-    font-size: 22px;
-    line-height: 22px;
     letter-spacing: 0.14px;
   }
 
   .tours__container h2::before {
-    top: -4px;
     left: 49.5%;
     width: 100%;
-    font-size: 26px;
-    line-height: 26px;
   }
 
   .tours__container br {
@@ -5646,17 +5532,12 @@ button,
 
   .education__description-container h2 {
     margin-bottom: 16px;
-    font-size: 22px;
-    line-height: 22px;
     letter-spacing: 0;
   }
 
   .education__description-container h2::before {
-    top: -4px;
     left: 49.5%;
     width: 100%;
-    font-size: 26px;
-    line-height: 26px;
   }
 
   .education__description-container p {
@@ -5825,16 +5706,11 @@ button,
 
   .about__content h2 {
     margin-bottom: 33px;
-    font-size: 22px;
-    line-height: 22px;
   }
 
   .about__content h2::before {
-    top: -4px;
     left: 49.5%;
     width: 100%;
-    font-size: 26px;
-    line-height: 26px;
   }
 
   .about__content h3 {
@@ -5854,16 +5730,11 @@ button,
   .reviews h2 {
     margin-bottom: 17px;
     margin-left: 0;
-    font-size: 22px;
-    line-height: 22px;
   }
 
   .reviews h2::before {
-    top: -4px;
     left: 49.5%;
     width: 100%;
-    font-size: 26px;
-    line-height: 26px;
   }
 
   .reviews__container {
@@ -5908,15 +5779,10 @@ button,
 
   .features h2 {
     margin-bottom: 29px;
-    font-size: 22px;
-    line-height: 22px;
   }
 
   .features h2::before {
-    top: -4px;
     left: 15.6%;
-    font-size: 26px;
-    line-height: 26px;
   }
 
   .features__container {
@@ -5956,16 +5822,11 @@ button,
 
   .gallery__description-container h2 {
     margin-bottom: 15px;
-    font-size: 22px;
-    line-height: 22px;
   }
 
   .gallery__description-container h2::before {
-    top: -4px;
     left: 49.5%;
     width: 100%;
-    font-size: 26px;
-    line-height: 26px;
   }
 
   .gallery__description-container p {
@@ -6026,16 +5887,11 @@ button,
 
   .contacts__description h2 {
     margin-bottom: 12px;
-    font-size: 22px;
-    line-height: 22px;
   }
 
   .contacts__description h2::before {
-    top: -4px;
     left: 49.9%;
     width: 100%;
-    font-size: 26px;
-    line-height: 26px;
   }
 
   .contacts__description p {
