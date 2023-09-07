@@ -2409,7 +2409,7 @@ button,
   color: #0266c1;
 }
 
-.section-title__container h2 {
+.section-title h2 {
   position: relative;
   font-size: 35px;
   line-height: 35px;
@@ -2417,7 +2417,7 @@ button,
   z-index: 1;
 }
 
-.section-title__container h2::before {
+.section-title h2::before {
   position: absolute;
   top: -17px;
   font-size: 55px;
@@ -4416,12 +4416,12 @@ button,
     height: 44px;
   }
 
-  .section-title__container h2 {
+  .section-title h2 {
     font-size: 25px;
     line-height: 25px;
   }
 
-  .section-title__container h2::before {
+  .section-title h2::before {
     top: -13px;
     font-size: 40px;
     line-height: 40px;
@@ -5171,12 +5171,12 @@ button,
     height: 34px;
   }
 
-  .section-title__container h2 {
+  .section-title h2 {
     font-size: 22px;
     line-height: 22px;
   }
 
-  .section-title__container h2::before {
+  .section-title h2::before {
     top: -4px;
     width: 100%;
     font-size: 26px;
