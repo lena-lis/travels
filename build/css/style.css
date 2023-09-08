@@ -5590,7 +5590,7 @@ button,
     border-top: none;
   }
 
-  .education__process-container li:last-of-type:after {
+  .education__process-container li:last-of-type::after {
     display: none;
   }
 

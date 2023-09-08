@@ -215,11 +215,11 @@
       }
 
       @include vp-767 {
-      top: 20px;
-      bottom: unset;
-      left: -26px;
-      width: 10px;
-      height: 100%;
+        top: 20px;
+        bottom: unset;
+        left: -26px;
+        width: 10px;
+        height: 100%;
       }
     }
 
@@ -254,7 +254,7 @@
       border-top: none;
     }
 
-    &:after {
+    &::after {
       @include vp-767 {
         display: none;
       }
