@@ -8,9 +8,11 @@
     <link rel="icon" href="img/favicons/favicon.svg" type="image/svg+xml">
     <link rel="apple-touch-icon" href="img/favicons/apple-icon-180x180.png">
     <link rel="stylesheet" href="css/style.min.css">
+    <link rel="preload" href="./fonts/montserrat-300.woff2" type="font/woff2" as="font" crossorigin="anonymous">
     <link rel="preload" href="./fonts/montserrat-400.woff2" type="font/woff2" as="font" crossorigin="anonymous">
     <link rel="preload" href="./fonts/montserrat-500.woff2" type="font/woff2" as="font" crossorigin="anonymous">
     <link rel="preload" href="./fonts/montserrat-600.woff2" type="font/woff2" as="font" crossorigin="anonymous">
+    <link rel="preload" href="./fonts/montserrat-700.woff2" type="font/woff2" as="font" crossorigin="anonymous">
     <link rel="preload" href="./fonts/montserrat-800.woff2" type="font/woff2" as="font" crossorigin="anonymous">
     <title>Путешествия</title>
   </head>
@@ -1158,7 +1160,7 @@
               </div>
               <div class="info__input-container" data-validate-type="phone" data-on-input-validate="data-on-input-validate" data-required="data-required">
                 <label class="visually-hidden" for="tel">Телефон</label>
-                <input type="tel" id="tel" name="tel" placeholder="Телефон" pattern="^((\+7)[\ ]?)?(\(?\d{3}\)?[\ ]?)?[\d\ ]{10}$" required>
+                <input type="tel" id="tel" name="tel" placeholder="Телефон" pattern="^\d{11}$" required>
               </div>
               <button class="btn" type="submit">Отправить</button>
             </form>

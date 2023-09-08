@@ -22,7 +22,7 @@ const enableSlider = () => {
   });
 };
 
-const breakpointChecker = () => {
+const breakpointCheck = () => {
   if (!breakpoint.matches) {
     // clean up old instances and inline styles when available
     if (featuresSlider) {
@@ -35,6 +35,6 @@ const breakpointChecker = () => {
 };
 
 // keep an eye on viewport size changes
-breakpoint.addEventListener('change', breakpointChecker);
+breakpoint.addEventListener('change', breakpointCheck);
 // kickstart
-breakpointChecker();
+breakpointCheck();
