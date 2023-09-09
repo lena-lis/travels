@@ -27,4 +27,4 @@ const initHeroSlider = new Swiper('[data-hero-slider]', {
   },
 });
 
-initHeroSlider.on('afterInit', catchActiveSlideFocus());
+initHeroSlider.on('init', catchActiveSlideFocus());
