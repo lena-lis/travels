@@ -1,7 +1,7 @@
 const initVideo = () => {
   const videoContainer = document.querySelector('[data-video-container]');
-  const playButton = videoContainer.querySelector('[data-video-button]');
-  const poster = videoContainer.querySelector('[data-video-poster]');
+  const playButton = document.querySelector('[data-video-button]');
+  const poster = document.querySelector('[data-video-poster]');
 
   if (videoContainer && playButton && poster) {
     playButton.addEventListener('click', function (evt) {

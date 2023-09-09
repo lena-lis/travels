@@ -27,4 +27,12 @@ const initHeroSlider = new Swiper('[data-hero-slider]', {
   },
 });
 
-initHeroSlider.on('init', catchActiveSlideFocus());
+initHeroSlider.on('afterInit', catchActiveSlideFocus()).on('slideChange', function () {
+  const indexCurrentSlide = initHeroSlider.activeIndex;
+  const currentSlide = initHeroSlider.slides[indexCurrentSlide];
+  const inactiveSlides = initHeroSlider.slides;
+  inactiveSlides.forEach((element) => {
+    element.setAttribute('inert', true);
+  });
+  currentSlide.removeAttribute('inert');
+});

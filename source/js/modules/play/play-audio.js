@@ -20,7 +20,7 @@ function onButtonPlayAudio() {
 }
 
 const initAudioPlayer = () => {
-  if (!audioContainer && !audioButton && !audioPoster) {
+  if (!audioContainer || !audioButton || !audioPoster) {
     return;
   }
   audioButton.addEventListener('click', onButtonPlayAudio);
