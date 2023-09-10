@@ -662,3 +662,7 @@ button.swiper-pagination-bullet {
     visibility: hidden;
   }
 }
+
+.swiper-slide.swiper-slide-duplicate.swiper-slide-active {
+  visibility: visible;
+}
