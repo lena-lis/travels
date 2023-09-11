@@ -1,12 +1,19 @@
 import Swiper from '../../vendor/swiper.js';
 
-function catchActiveSlideFocus() {
+function renderActiveSlide() {
+  const heroList = document.querySelector('[data-hero-list]');
+  const heroBackgrounds = document.querySelectorAll('[data-hero-background]');
   const heroSlides = document.querySelectorAll('.hero__item');
   const activeHeroSlide = document.querySelector('.hero__item.swiper-slide-active');
 
-  if (!activeHeroSlide) {
+  if (!heroList && !heroBackgrounds && !activeHeroSlide) {
     return;
   }
+
+  heroBackgrounds.forEach((el) => el.classList.remove('is-active'));
+
+  const activeBackground = Array.from(heroBackgrounds).find((element) => element.dataset.indexNumber === activeHeroSlide.dataset.swiperSlideIndex);
+  activeBackground.classList.add('is-active');
 
   const focusableSlides = Array.from(heroSlides).filter((heroSlide) => !heroSlide.classList.contains('swiper-slide-active'));
   focusableSlides.forEach((element) => element.setAttribute('inert', true));
@@ -27,12 +34,14 @@ const initHeroSlider = new Swiper('[data-hero-slider]', {
   },
 });
 
-initHeroSlider.on('afterInit', catchActiveSlideFocus()).on('slideChange', function () {
-  const indexCurrentSlide = initHeroSlider.activeIndex;
-  const currentSlide = initHeroSlider.slides[indexCurrentSlide];
-  const inactiveSlides = initHeroSlider.slides;
-  inactiveSlides.forEach((element) => {
-    element.setAttribute('inert', true);
-  });
-  currentSlide.removeAttribute('inert');
-});
+initHeroSlider.on('afterInit', renderActiveSlide()).
+    on('slideChange', function () {
+      const indexCurrentSlide = initHeroSlider.activeIndex;
+      const currentSlide = initHeroSlider.slides[indexCurrentSlide];
+      const inactiveSlides = initHeroSlider.slides;
+      inactiveSlides.forEach((element) => {
+        element.setAttribute('inert', true);
+      });
+      currentSlide.removeAttribute('inert');
+    }).
+    on('slideChangeTransitionEnd', renderActiveSlide); // делаем коллбэк

@@ -42,7 +42,7 @@ const initInstructorsSlider = new Swiper('[data-instructors-slider]', {
 });
 
 const initReviewsSlider = new Swiper('[data-reviews-slider]', {
-  cssMode: true,
+  // cssMode: true,
   loop: false,
   slidesPerView: 1,
   breakpoints: {

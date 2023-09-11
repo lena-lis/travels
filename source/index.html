@@ -64,18 +64,11 @@
               </div>
             </nav>
           </div>
-        </div>
-      </header>
 
-      <main>
-
-        <!-- HERO -->
-
-        <section class="hero">
-          <h1 class="visually-hidden">Популярные направления наших туров</h1>
-          <div class="hero__container">
+          <div class="main-header__slider hero">
+            <h1 class="visually-hidden">Популярные направления наших туров</h1>
             <div class="hero__slider swiper" data-hero-slider>
-              <ol class="hero__list swiper-wrapper">
+              <ol class="hero__list swiper-wrapper" data-hero-list>
                 <li class="hero__item swiper-slide">
                   <div class="hero__content hero__content--caucasus">
                     <h2>Захватывающие<br> вершины Кавказа</h2>
@@ -113,17 +106,6 @@
                       </button>
                     </div>
                   </div>
-                  <div class="hero__background-container">
-                    <picture>
-                      <source srcset="img/hero/hero-caucasus-desktop.webp 1x, img/hero/hero-caucasus-desktop@2x.webp 2x" type="image/webp" media="(min-width: 1200px)">
-                      <source srcset="img/hero/hero-caucasus-tablet.webp 1x, img/hero/hero-caucasus-tablet@2x.webp 2x" type="image/webp" media="(min-width: 768px)">
-                      <source srcset="img/hero/hero-caucasus-mobile.webp 1x, img/hero/hero-caucasus-mobile@2x.webp 2x" type="image/webp">
-
-                      <source srcset="img/hero/hero-caucasus-desktop.jpg 1x, img/hero/hero-caucasus-desktop@2x.jpg 2x" width="1440" height="800" type="image/webp" media="(min-width: 1200px)">
-                      <source srcset="img/hero/hero-caucasus-tablet.jpg 1x, img/hero/hero-caucasus-tablet@2x.jpg 2x" width="768" height="1024" type="image/webp" media="(min-width: 768px)">
-                      <img src="img/hero/hero-caucasus-mobile.jpg" width="320" height="568" srcset="img/hero/hero-caucasus-mobile@2x.jpg 2x" alt="Захватывающие вершины Кавказа.">
-                    </picture>
-                  </div>
                 </li>
 
                 <li class="hero__item swiper-slide">
@@ -156,17 +138,6 @@
                         <img src="img/hero/polaroid-tablet.png" width="442" height="365" srcset="img/hero/polaroid-tablet@2x.png 2x" loading="lazy" alt="Два снимка-полароид с видами Камчатки.">
                       </picture>
                     </div>
-                  </div>
-                  <div class="hero__background-container">
-                    <picture>
-                      <source srcset="img/hero/hero-kamchatka-desktop.webp 1x, img/hero/hero-kamchatka-desktop@2x.webp 2x" type="image/webp" media="(min-width: 1200px)">
-                      <source srcset="img/hero/hero-kamchatka-tablet.webp 1x, img/hero/hero-kamchatka-tablet@2x.webp 2x" type="image/webp" media="(min-width: 768px)">
-                      <source srcset="img/hero/hero-kamchatka-mobile.webp 1x, img/hero/hero-kamchatka-mobile@2x.webp 2x" type="image/webp">
-
-                      <source srcset="img/hero/hero-kamchatka-desktop.jpg 1x, img/hero/hero-kamchatka-desktop@2x.jpg 2x" width="1440" height="800" type="image/webp" media="(min-width: 1200px)">
-                      <source srcset="img/hero/hero-kamchatka-tablet.jpg 1x, img/hero/hero-kamchatka-tablet@2x.jpg 2x" width="768" height="1024" type="image/webp" media="(min-width: 768px)">
-                      <img src="img/hero/hero-kamchatka-mobile.jpg" width="320" height="568" srcset="img/hero/hero-kamchatka-mobile@2x.jpg 2x" loading="lazy" alt="Невероятная природа Камчатки.">
-                    </picture>
                   </div>
                 </li>
 
@@ -204,17 +175,6 @@
                       </button>
                     </div>
                   </div>
-                  <div class="hero__background-container">
-                    <picture>
-                      <source srcset="img/hero/hero-altai-desktop.webp 1x, img/hero/hero-altai-desktop@2x.webp 2x" type="image/webp" media="(min-width: 1200px)">
-                      <source srcset="img/hero/hero-altai-tablet.webp 1x, img/hero/hero-altai-tablet@2x.webp 2x" type="image/webp" media="(min-width: 768px)">
-                      <source srcset="img/hero/hero-altai-mobile.webp 1x, img/hero/hero-altai-mobile@2x.webp 2x" type="image/webp">
-
-                      <source srcset="img/hero/hero-altai-desktop.jpg 1x, img/hero/hero-altai-desktop@2x.jpg 2x" width="1440" height="800" type="image/webp" media="(min-width: 1200px)">
-                      <source srcset="img/hero/hero-altai-tablet.jpg 1x, img/hero/hero-altai-tablet@2x.jpg 2x" width="768" height="1024" type="image/webp" media="(min-width: 768px)">
-                      <img src="img/hero/hero-altai-mobile.jpg" width="320" height="568" srcset="img/hero/hero-altai-mobile@2x.jpg 2x" loading="lazy" alt="Магические пейзажи Алтайского Края.">
-                    </picture>
-                  </div>
                 </li>
               </ol>
 
@@ -222,7 +182,44 @@
               <div class="hero__pagination swiper-pagination container"></div>
             </div>
           </div>
-        </section>
+
+          <div class="hero__background-container hero__background-container--caucasus" data-hero-background data-index-number="0">
+            <picture>
+              <source srcset="img/hero/hero-caucasus-desktop.webp 1x, img/hero/hero-caucasus-desktop@2x.webp 2x" type="image/webp" media="(min-width: 1200px)">
+              <source srcset="img/hero/hero-caucasus-tablet.webp 1x, img/hero/hero-caucasus-tablet@2x.webp 2x" type="image/webp" media="(min-width: 768px)">
+              <source srcset="img/hero/hero-caucasus-mobile.webp 1x, img/hero/hero-caucasus-mobile@2x.webp 2x" type="image/webp">
+
+              <source srcset="img/hero/hero-caucasus-desktop.jpg 1x, img/hero/hero-caucasus-desktop@2x.jpg 2x" width="1440" height="800" type="image/webp" media="(min-width: 1200px)">
+              <source srcset="img/hero/hero-caucasus-tablet.jpg 1x, img/hero/hero-caucasus-tablet@2x.jpg 2x" width="768" height="1024" type="image/webp" media="(min-width: 768px)">
+              <img src="img/hero/hero-caucasus-mobile.jpg" width="320" height="568" srcset="img/hero/hero-caucasus-mobile@2x.jpg 2x" alt="Захватывающие вершины Кавказа.">
+            </picture>
+          </div>
+          <div class="hero__background-container hero__background-container--kamchatka" data-hero-background data-index-number="1">
+            <picture>
+              <source srcset="img/hero/hero-kamchatka-desktop.webp 1x, img/hero/hero-kamchatka-desktop@2x.webp 2x" type="image/webp" media="(min-width: 1200px)">
+              <source srcset="img/hero/hero-kamchatka-tablet.webp 1x, img/hero/hero-kamchatka-tablet@2x.webp 2x" type="image/webp" media="(min-width: 768px)">
+              <source srcset="img/hero/hero-kamchatka-mobile.webp 1x, img/hero/hero-kamchatka-mobile@2x.webp 2x" type="image/webp">
+
+              <source srcset="img/hero/hero-kamchatka-desktop.jpg 1x, img/hero/hero-kamchatka-desktop@2x.jpg 2x" width="1440" height="800" type="image/webp" media="(min-width: 1200px)">
+              <source srcset="img/hero/hero-kamchatka-tablet.jpg 1x, img/hero/hero-kamchatka-tablet@2x.jpg 2x" width="768" height="1024" type="image/webp" media="(min-width: 768px)">
+              <img src="img/hero/hero-kamchatka-mobile.jpg" width="320" height="568" srcset="img/hero/hero-kamchatka-mobile@2x.jpg 2x" loading="lazy" alt="Невероятная природа Камчатки.">
+            </picture>
+          </div>
+          <div class="hero__background-container hero__background-container--altai" data-hero-background data-index-number="2">
+            <picture>
+              <source srcset="img/hero/hero-altai-desktop.webp 1x, img/hero/hero-altai-desktop@2x.webp 2x" type="image/webp" media="(min-width: 1200px)">
+              <source srcset="img/hero/hero-altai-tablet.webp 1x, img/hero/hero-altai-tablet@2x.webp 2x" type="image/webp" media="(min-width: 768px)">
+              <source srcset="img/hero/hero-altai-mobile.webp 1x, img/hero/hero-altai-mobile@2x.webp 2x" type="image/webp">
+
+              <source srcset="img/hero/hero-altai-desktop.jpg 1x, img/hero/hero-altai-desktop@2x.jpg 2x" width="1440" height="800" type="image/webp" media="(min-width: 1200px)">
+              <source srcset="img/hero/hero-altai-tablet.jpg 1x, img/hero/hero-altai-tablet@2x.jpg 2x" width="768" height="1024" type="image/webp" media="(min-width: 768px)">
+              <img src="img/hero/hero-altai-mobile.jpg" width="320" height="568" srcset="img/hero/hero-altai-mobile@2x.jpg 2x" loading="lazy" alt="Магические пейзажи Алтайского Края.">
+            </picture>
+          </div>
+        </div>
+      </header>
+
+      <main>
 
         <!-- Ближайшие туры -->
 

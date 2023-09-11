@@ -156,6 +156,7 @@
     position: relative;
     display: grid;
     grid-template-columns: min-content minmax(238px, auto);
+    align-items: end;
     column-gap: 15px;
     margin-bottom: 33px;
 
@@ -165,6 +166,7 @@
 
     @include vp-1199 {
       grid-template-columns: min-content auto;
+      align-items: start;
       margin-bottom: 0;
     }
 
@@ -299,11 +301,13 @@
   }
 
   svg {
-    align-self: center;
+    margin-top: 10px;
+    margin-bottom: 13px;
 
     @include vp-1199 {
       align-self: start;
       margin-top: 7px;
+      margin-bottom: 0;
     }
 
     @include vp-767 {

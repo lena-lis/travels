@@ -93,7 +93,19 @@
   box-shadow: none;
 }
 
+.tours__item {
+  height: auto;
+}
+
 .tours__image-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  width: 100%;
+  height: 100%;
+  background-color: $color-navy-blue-opacity;
+
   img {
     width: 100%;
     height: 100%;
@@ -102,9 +114,6 @@
 }
 
 .tours__content {
-  position: absolute;
-  top: 0;
-  left: 0;
   display: flex;
   flex-direction: column;
   width: 100%;
