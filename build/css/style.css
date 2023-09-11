@@ -2312,6 +2312,10 @@ button,
   background-color: #0266c1;
   border: 1px solid #0266c1;
   cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
   -webkit-transition: opacity 0.3s ease;
   transition: opacity 0.3s ease;
 }
@@ -2432,6 +2436,10 @@ button,
   opacity: 0.03;
   z-index: -1;
   content: attr(data-parent);
+}
+
+.hero__container {
+  background-color: rgba(2, 102, 193, 0.1);
 }
 
 .hero__slider {
@@ -2763,7 +2771,7 @@ button,
   -ms-grid-row: 1;
   -ms-grid-row-span: 1;
   grid-row: 1/2;
-  margin-left: 152px;
+  margin-left: 137px;
 }
 
 .main-footer__contacts a {
@@ -2829,9 +2837,6 @@ button,
   -ms-grid-columns: max-content 1fr;
   grid-template-columns: -webkit-max-content 1fr;
   grid-template-columns: max-content 1fr;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
   padding-top: 40px;
   background-color: rgba(255, 255, 255, 0);
 }
@@ -2865,9 +2870,10 @@ button,
   -ms-grid-columns: 1fr max-content;
   grid-template-columns: 1fr -webkit-max-content;
   grid-template-columns: 1fr max-content;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+}
+
+.main-navigation__menu {
+  margin: 0 auto;
 }
 
 .main-navigation__menu a {
@@ -2884,7 +2890,8 @@ button,
 }
 
 .main-navigation__contacts {
-  margin-left: 121px;
+  margin-top: 24px;
+  margin-left: 105px;
 }
 
 .main-navigation__contacts a {
@@ -3085,6 +3092,7 @@ button,
   top: -18px;
   right: 0;
   z-index: -1;
+  background-color: #ffffff;
 }
 
 .tours__background-container img {
@@ -3095,6 +3103,7 @@ button,
   position: absolute;
   top: 53%;
   left: 0;
+  background-color: #ffffff;
 }
 
 .tours__clouds-container img {
@@ -3151,8 +3160,9 @@ button,
   height: 100%;
   padding: 206px 20px 24px;
   color: #ffffff;
-  background: -webkit-gradient(linear, left bottom, left top, color-stop(61.9%, rgba(0, 0, 0, 0.6)), to(rgba(0, 0, 0, 0)));
-  background: linear-gradient(0deg, rgba(0, 0, 0, 0.6) 61.9%, rgba(0, 0, 0, 0) 100%);
+  background-color: rgba(2, 102, 193, 0.1);
+  background: -webkit-gradient(linear, left bottom, left top, color-stop(22.3%, rgba(0, 0, 0, 0.6)), color-stop(60.32%, rgba(0, 0, 0, 0)));
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.6) 22.3%, rgba(0, 0, 0, 0) 60.32%);
   z-index: 1;
 }
 
@@ -3240,10 +3250,6 @@ button,
 
 .tours__info-container--adygea p {
   gap: 10px;
-}
-
-.tours__features-container {
-  margin-top: auto;
 }
 
 .tours__features-container table {
@@ -3556,6 +3562,7 @@ button,
   -webkit-box-ordinal-group: 0;
   -ms-flex-order: -1;
   order: -1;
+  background-color: rgba(2, 102, 193, 0.1);
 }
 
 .instructors__image-container img {
@@ -3567,7 +3574,6 @@ button,
 
 .about {
   position: relative;
-  max-width: 1920px;
   min-height: 474px;
   margin: 0 auto;
   margin-bottom: 53px;
@@ -3578,6 +3584,7 @@ button,
   top: -165px;
   right: 0;
   z-index: -1;
+  background-color: #ffffff;
 }
 
 .about__image-container {
@@ -3585,6 +3592,7 @@ button,
   top: 0;
   left: 0;
   z-index: -1;
+  background-color: #ffffff;
 }
 
 .about__image-container img {
@@ -3737,6 +3745,7 @@ button,
   -ms-grid-column-span: 1;
   grid-column: 1/2;
   grid-row: 1/-1;
+  background-color: #0266c1;
 }
 
 .reviews__image-container img {
@@ -3765,6 +3774,7 @@ button,
 
 .features__clouds-container {
   position: absolute;
+  background-color: #ffffff;
 }
 
 .features__clouds-container--left {
@@ -3898,6 +3908,7 @@ button,
   height: 100%;
   -o-object-fit: cover;
   object-fit: cover;
+  background-color: rgba(2, 102, 193, 0.1);
 }
 
 .gallery__slider-buttons {
@@ -3911,6 +3922,7 @@ button,
 
 .info {
   position: relative;
+  background-color: rgba(2, 102, 193, 0.1);
 }
 
 .info__background-container {
@@ -4248,6 +4260,7 @@ button,
 
 .contacts__map {
   margin-top: 75px;
+  background-color: rgba(2, 102, 193, 0.1);
 }
 
 /* @mixin hover-focus {
@@ -4326,7 +4339,7 @@ button,
   }
 
   .main-footer__contacts {
-    margin-left: 90px;
+    margin-left: 73px;
   }
 
   .main-header__container {
@@ -4338,7 +4351,7 @@ button,
   }
 
   .main-navigation__contacts {
-    margin-left: 89px;
+    margin-left: 73px;
   }
 
   .tours__content {
@@ -4590,6 +4603,7 @@ button,
 
   .main-navigation__menu {
     grid-row: 2/-1;
+    margin: 0;
     margin-left: -6px;
   }
 
@@ -4627,6 +4641,7 @@ button,
 
   .main-navigation__contacts {
     grid-column: 2/-1;
+    margin-top: 14px;
     margin-left: 40px;
     text-align: end;
   }
@@ -5355,7 +5370,7 @@ button,
   .main-navigation__contacts {
     grid-row: 2/-1;
     align-self: flex-start;
-    margin-left: 0;
+    margin: 0;
   }
 
   .main-navigation__contacts a {
