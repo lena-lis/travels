@@ -1,7 +1,6 @@
 .main-navigation {
   display: grid;
   grid-template-columns: 1fr max-content;
-  align-items: center;
 
   @include vp-1199 {
     grid-template-columns: repeat(2, 1fr);
@@ -21,8 +20,11 @@
 }
 
 .main-navigation__menu {
+  margin: 0 auto;
+
   @include vp-1199 {
     grid-row: 2 / -1;
+    margin: 0;
     margin-left: -6px;
   }
 
@@ -87,14 +89,16 @@
 }
 
 .main-navigation__contacts {
-  margin-left: 121px;
+  margin-top: 24px;
+  margin-left: 105px;
 
   @include vp-1439 {
-    margin-left: 89px;
+    margin-left: 73px;
   }
 
   @include vp-1199 {
     grid-column: 2 / -1;
+    margin-top: 14px;
     margin-left: 40px;
     text-align: end;
   }
@@ -102,7 +106,7 @@
   @include vp-767 {
     grid-row: 2 / -1;
     align-self: flex-start;
-    margin-left: 0;
+    margin: 0;
   }
 
   a {

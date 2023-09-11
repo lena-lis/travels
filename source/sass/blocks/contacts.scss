@@ -169,6 +169,7 @@
 
 .contacts__map {
   margin-top: 75px;
+  background-color: $color-navy-blue-opacity;
 
   @include vp-1199 {
     min-height: 340px;

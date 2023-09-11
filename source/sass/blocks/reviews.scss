@@ -175,6 +175,7 @@
 .reviews__image-container {
   grid-column: 1 / 2;
   grid-row: 1 / -1;
+  background-color: $color-navy-blue;
 
   @include vp-767 {
     margin-bottom: 16px;

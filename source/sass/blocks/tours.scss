@@ -7,6 +7,7 @@
   top: -18px;
   right: 0;
   z-index: -1;
+  background-color: $color-default-white;
 
   @include vp-1199 {
     top: -95px;
@@ -25,6 +26,7 @@
   position: absolute;
   top: 53%;
   left: 0;
+  background-color: $color-default-white;
 
   @include vp-1199 {
     display: none;
@@ -109,6 +111,7 @@
   height: 100%;
   padding: 206px 20px 24px;
   color: $color-default-white;
+  background-color: $color-navy-blue-opacity;
   background: $black-tours-overlay;
   z-index: 1;
 
@@ -300,8 +303,6 @@
 }
 
 .tours__features-container {
-  margin-top: auto;
-
   table {
     width: 100%;
   }

@@ -1,6 +1,5 @@
 .about {
   position: relative;
-  max-width: 1920px;
   min-height: 474px;
   margin: 0 auto;
   margin-bottom: 53px;
@@ -20,6 +19,7 @@
   top: -165px;
   right: 0;
   z-index: -1;
+  background-color: $color-default-white;
 
   @include vp-1199 {
     display: none;
@@ -31,6 +31,7 @@
   top: 0;
   left: 0;
   z-index: -1;
+  background-color: $color-default-white;
 
   @include vp-1199 {
     top: 7px;

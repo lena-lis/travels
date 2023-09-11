@@ -33,6 +33,7 @@
 
 .features__clouds-container {
   position: absolute;
+  background-color: $color-default-white;
 
   @include vp-1199 {
     display: none;

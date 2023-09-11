@@ -10,6 +10,7 @@
   background-color: $color-navy-blue;
   border: 1px solid $color-navy-blue;
   cursor: pointer;
+  user-select: none;
 
   transition: opacity $trans-default;
 
