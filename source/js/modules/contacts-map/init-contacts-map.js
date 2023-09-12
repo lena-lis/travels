@@ -1,8 +1,6 @@
 import L from '../../vendor/leaflet';
 
 const mapContainer = document.querySelector('[data-contacts-map]');
-// const breakpointTablet = window.matchMedia('(min-width: 768px)');
-// const breakpointDesktop = window.matchMedia('(min-width: 1200px)');
 
 const initContactsMap = () => {
   if (!mapContainer) {
@@ -28,20 +26,9 @@ const initContactsMap = () => {
     iconSize: [48, 48],
   });
 
-  // function getIcon () {
-  //   breakpointTablet.addEventListener('change', function() {
-  //     if(breakpointTablet.matches) {
-  //       L.icon({
-  //         iconUrl: './img/svg/map-pin.svg',
-  //         iconSize: [42, 42],
-  //       });
-  //     }
-  //     return;
-  //   });
-  // }
-
   const marker = L.marker([55.7748763, 37.6326415], {icon: customIcon}).bindPopup('г. Москва, пр-т Мира, д. 14, офис 101');
   marker.addTo(map);
+  // map.invalidateSize();
 };
 
 export {initContactsMap};

@@ -12,7 +12,7 @@
   }
 
   @include vp-767 {
-    grid-template-rows: repeat(3, minmax(30px, auto));
+    grid-template-rows: repeat(2, minmax(30px, auto));
     column-gap: 70px;
     row-gap: 11px;
     margin-top: -49px;
