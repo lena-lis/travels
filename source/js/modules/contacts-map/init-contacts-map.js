@@ -1,15 +1,15 @@
 import L from '../../vendor/leaflet';
 
-const mapContainer = document.querySelector('[data-contacts-map]');
-
 const initContactsMap = () => {
-  if (!mapContainer) {
+  const contactsMap = document.querySelector('[data-contacts-map]');
+
+  if (!contactsMap) {
     return;
   }
 
-  mapContainer.replaceChildren();
+  contactsMap.replaceChildren();
 
-  const map = L.map(mapContainer, {
+  const map = L.map(contactsMap, {
     center: [55.7748763, 37.6326415],
     zoom: 13,
     scrollWheelZoom: false,
@@ -28,7 +28,12 @@ const initContactsMap = () => {
 
   const marker = L.marker([55.7748763, 37.6326415], {icon: customIcon}).bindPopup('г. Москва, пр-т Мира, д. 14, офис 101');
   marker.addTo(map);
-  // map.invalidateSize();
+
+  const resizeObserver = new ResizeObserver(() => {
+    map.invalidateSize();
+  });
+
+  resizeObserver.observe(contactsMap);
 };
 
 export {initContactsMap};

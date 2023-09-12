@@ -14,6 +14,7 @@
   width: 100%;
   height: 100%;
   background-color: $color-black-opacity;
+  z-index: 2;
 }
 
 .main-header__container {
@@ -32,15 +33,16 @@
   @include vp-1199 {
     display: flex;
     flex-direction: column;
+    max-height: 0;
+    min-height: 131px;
+    transition: 1s ease max-height;
     padding-top: 30px;
     padding-bottom: 55px;
   }
 
   @include vp-767 {
-    max-height: calc(100vh - 15px);
     padding-top: 15px;
     padding-bottom: 47px;
-    overflow: scroll;
   }
 }
 
@@ -74,8 +76,14 @@
 .main-header__container:has(.main-navigation--opened) {
   position: fixed;
   background-color: $color-default-white;
+  max-height: calc(100vh - 15px);
+  overflow: scroll;
 
   .main-header__logo {
     color: $color-elephant;
+  }
+
+  & + .main-header__slider {
+    padding-top: 131px;
   }
 }

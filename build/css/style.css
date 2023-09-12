@@ -2834,6 +2834,7 @@ button,
   width: 100%;
   height: 100%;
   background-color: rgba(0, 0, 0, 0.5);
+  z-index: 2;
 }
 
 .main-header__container {
@@ -2864,10 +2865,16 @@ button,
 .main-header__container:has(.main-navigation--opened) {
   position: fixed;
   background-color: #ffffff;
+  max-height: calc(100vh - 15px);
+  overflow: scroll;
 }
 
 .main-header__container:has(.main-navigation--opened) .main-header__logo {
   color: #2d383f;
+}
+
+.main-header__container:has(.main-navigation--opened) + .main-header__slider {
+  padding-top: 131px;
 }
 
 .main-navigation {
@@ -3161,7 +3168,6 @@ button,
 
 .tours__image-container img {
   width: 100%;
-  height: 100%;
   -o-object-fit: cover;
   object-fit: cover;
 }
@@ -4249,16 +4255,18 @@ button,
   font-weight: 600;
 }
 
-.contacts__link {
+.contacts__item .contacts__link {
   -ms-grid-row: 2;
   -ms-grid-row-span: 1;
   grid-row: 2/3;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   font-size: 16px;
   line-height: 24px;
 }
 
-.contacts__link address {
+.contacts__item .contacts__link address {
   font-style: normal;
 }
 
@@ -4284,8 +4292,21 @@ button,
   margin-top: 12px;
 }
 
-.contacts__map {
+.contacts__map-container {
+  position: relative;
+  width: 100%;
+  min-height: 324px;
   margin-top: 75px;
+}
+
+.contacts__map {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
   background-color: rgba(2, 102, 193, 0.1);
 }
 
@@ -4605,6 +4626,10 @@ button,
     -webkit-box-direction: normal;
     -ms-flex-direction: column;
     flex-direction: column;
+    max-height: 0;
+    min-height: 131px;
+    -webkit-transition: 1s ease max-height;
+    transition: 1s ease max-height;
     padding-top: 30px;
     padding-bottom: 55px;
   }
@@ -5180,7 +5205,7 @@ button,
     line-height: 16px;
   }
 
-  .contacts__link {
+  .contacts__item .contacts__link {
     font-size: 14px;
     line-height: 22px;
   }
@@ -5188,6 +5213,11 @@ button,
   .contacts__item svg {
     width: 24px;
     height: 24px;
+    margin-top: 0;
+  }
+
+  .contacts__map-container {
+    min-height: 340px;
     margin-top: 0;
   }
 
@@ -5362,8 +5392,6 @@ button,
   }
 
   .main-header__container {
-    max-height: calc(100vh - 20px);
-    overflow: scroll;
     padding-top: 15px;
     padding-bottom: 47px;
   }
@@ -5929,13 +5957,17 @@ button,
     line-height: 14px;
   }
 
-  .contacts__link {
+  .contacts__item .contacts__link {
     line-height: 20px;
   }
 
   .contacts__item svg {
     width: 22px;
     height: 22px;
+  }
+
+  .contacts__map-container {
+    min-height: 320px;
   }
 
   .contacts__map {
