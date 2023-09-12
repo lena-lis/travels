@@ -16,7 +16,7 @@
 
   &:hover,
   &:focus,
-  &focus-visible {
+  &:focus-visible {
     color: $color-resolution-blue;
     background-color: $color-transparent;
     border-color: $color-resolution-blue;
@@ -24,6 +24,7 @@
   }
 
   &:active {
+    color: $color-default-white;
     background-color: $color-resolution-blue;
     border-color: $color-resolution-blue;
   }

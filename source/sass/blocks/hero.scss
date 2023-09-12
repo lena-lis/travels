@@ -308,6 +308,14 @@
     padding: 0;
   }
 
+  &:hover,
+  &:focus {
+    svg {
+      color: $color-default-white;
+      stroke: $color-default-black;
+    }
+  }
+
   svg {
     position: inherit;
     top: 0;

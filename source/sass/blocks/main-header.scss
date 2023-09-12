@@ -37,8 +37,10 @@
   }
 
   @include vp-767 {
+    max-height: calc(100vh - 15px);
     padding-top: 15px;
     padding-bottom: 47px;
+    overflow: scroll;
   }
 }
 
