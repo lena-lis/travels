@@ -82,6 +82,16 @@
   }
 }
 
+.reviews__item:first-of-type + .reviews__item {
+  cite {
+    margin-top: 22px;
+
+    @include vp-1199 {
+      margin-top: 3px;
+    }
+  }
+}
+
 .reviews__inner {
   display: grid;
   grid-template-columns: repeat(2, auto);
@@ -143,16 +153,6 @@
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
-    margin-top: auto;
-    margin-bottom: 16px;
-
-    @include vp-1199 {
-      margin-bottom: 3px;
-    }
-
-    @include vp-767 {
-      margin-bottom: 0;
-    }
   }
 
   span {

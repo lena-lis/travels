@@ -92,6 +92,7 @@
 
   @include vp-1199 {
     gap: 6px 10px;
+    height: fit-content;
   }
 
   @include vp-767 {
@@ -121,6 +122,8 @@
   .contacts__link {
     grid-row: 2 / 3;
     display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
     font-size: 16px;
     line-height: 24px;
 

@@ -7,6 +7,7 @@ import {initContactsMap} from './modules/contacts-map/init-contacts-map';
 import './modules/slider/slider.js';
 import './modules/slider/hero-slider.js';
 import './modules/slider/features-slider.js';
+import './utils/smooth-scroll.js';
 
 // ---------------------------------
 
@@ -20,12 +21,13 @@ window.addEventListener('DOMContentLoaded', () => {
   // Modules
   // ---------------------------------
 
+  onNavToggleClick();
+  initVideo();
+  initAudioPlayer();
+
   // все скрипты должны быть в обработчике 'DOMContentLoaded', но не все в 'load'
   // в load следует добавить скрипты, не участвующие в работе первого экрана
   window.addEventListener('load', () => {
-    onNavToggleClick();
-    initVideo();
-    initAudioPlayer();
     initContactsMap();
     const form = new Form();
     window.form = form;

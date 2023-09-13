@@ -218,7 +218,17 @@
   width: 100%;
   height: 100%;
   background-color: $color-navy-blue-opacity;
-  background: $black-russian-overlay;
+
+  &::before {
+    position: inherit;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: $black-russian-overlay;
+    z-index: 1;
+    content: '';
+  }
 
   img {
     width: 100%;

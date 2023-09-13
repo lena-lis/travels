@@ -14,7 +14,7 @@
   @include vp-767 {
     grid-template-rows: repeat(2, minmax(30px, auto));
     column-gap: 70px;
-    row-gap: 11px;
+    row-gap: 0;
     margin-top: -49px;
   }
 }
@@ -107,6 +107,7 @@
     grid-row: 2 / -1;
     align-self: flex-start;
     margin: 0;
+    margin-top: -3px;
   }
 
   a {
@@ -235,6 +236,7 @@
 .main-navigation--opened {
   @include vp-767 {
     column-gap: 32px;
+    row-gap: 11px;
   }
 
   .main-navigation__toggle-icon {
