@@ -4273,6 +4273,10 @@ button,
   -ms-grid-columns: min-content auto;
   grid-template-columns: -webkit-min-content auto;
   grid-template-columns: min-content auto;
+  -ms-grid-rows: (-webkit-min-content)[2];
+  -ms-grid-rows: (min-content)[2];
+  grid-template-rows: repeat(2, -webkit-min-content);
+  grid-template-rows: repeat(2, min-content);
   gap: 8px 30px;
 }
 
