@@ -20,16 +20,6 @@ function renderActiveSlide() {
   activeHeroSlide.removeAttribute('inert');
 }
 
-function controlVideo() {
-  const indexCurrentSlide = initHeroSlider.activeIndex;
-  const currentSlide = initHeroSlider.slides[indexCurrentSlide];
-  const iframe = document.querySelector('iframe');
-
-  if (!currentSlide.contains(iframe)) {
-    iframe.setAttribute('src', 'https://www.youtube.com/embed/9TZXsZItgdw?autoplay=0');
-  }
-}
-
 const initHeroSlider = new Swiper('[data-hero-slider]', {
   loop: true,
   speed: 300,
@@ -43,6 +33,18 @@ const initHeroSlider = new Swiper('[data-hero-slider]', {
     clickable: true,
   },
 });
+
+function controlVideo() {
+  const indexCurrentSlide = initHeroSlider.activeIndex;
+  const currentSlide = initHeroSlider.slides[indexCurrentSlide];
+  const iframe = document.querySelector('iframe');
+
+  if (!currentSlide.contains(iframe)) {
+    if (iframe) {
+      iframe.setAttribute('src', 'https://www.youtube.com/embed/9TZXsZItgdw?autoplay=0');
+    }
+  }
+}
 
 initHeroSlider.on('afterInit', renderActiveSlide()).
     on('slideChange', function () {

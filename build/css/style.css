@@ -4784,7 +4784,7 @@ button,
   }
 
   .tours__content {
-    padding-top: 206px;
+    padding: 206px 19px 24px;
   }
 
   .tours__content h3 {
@@ -5476,7 +5476,7 @@ button,
     grid-row: 2/-1;
     align-self: flex-start;
     margin: 0;
-    margin-top: -3px;
+    margin-top: 11px;
   }
 
   .main-navigation__contacts a {
@@ -5531,8 +5531,7 @@ button,
   }
 
   .tours__content {
-    padding-top: 197px;
-    padding-bottom: 23px;
+    padding: 197px 20px 23px;
   }
 
   .tours__content h3 {
