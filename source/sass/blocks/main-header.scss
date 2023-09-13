@@ -41,13 +41,14 @@
   }
 
   @include vp-767 {
+    min-height: 124px;
     padding-top: 15px;
     padding-bottom: 47px;
   }
 }
 
 .main-header__logo-container {
-  margin-right: 121px;
+  margin-right: 105px;
 
   @include vp-1439 {
     margin-right: 89px;
@@ -85,5 +86,9 @@
 
   & + .main-header__slider {
     padding-top: 131px;
+
+    @include vp-767 {
+      padding-top: 124px;
+    }
   }
 }

@@ -2850,7 +2850,7 @@ button,
 }
 
 .main-header__logo-container {
-  margin-right: 121px;
+  margin-right: 105px;
 }
 
 .main-header__container:has(.main-navigation--nojs) {
@@ -4505,7 +4505,7 @@ button,
     -webkit-box-align: center;
     -ms-flex-align: center;
     align-items: center;
-    padding: 43px 45px 188px;
+    padding: 43px 45px 169px;
     text-align: center;
   }
 
@@ -5392,8 +5392,13 @@ button,
   }
 
   .main-header__container {
+    min-height: 124px;
     padding-top: 15px;
     padding-bottom: 47px;
+  }
+
+  .main-header__container:has(.main-navigation--opened) + .main-header__slider {
+    padding-top: 124px;
   }
 
   .main-header__logo-container {
