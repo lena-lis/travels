@@ -101,7 +101,7 @@
   grid-area: 1 / 1 / -1 / -1;
   position: relative;
   width: 100%;
-  height: fit-content;
+  height: 100%;
   background-color: $color-navy-blue-opacity;
   z-index: -1;
 
@@ -129,6 +129,7 @@
   flex-direction: column;
   width: 100%;
   height: fit-content;
+  margin-top: auto;
   padding: 206px 20px 24px;
   color: $color-default-white;
   z-index: 2;
