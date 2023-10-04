@@ -1,4 +1,5 @@
 import '../../utils/scroll-lock';
+import {scrollSmooth} from '../../utils/smooth-scroll';
 
 const navMenuOverlay = document.querySelector('[data-menu-overlay]');
 const navMain = document.querySelector('[data-nav-main]');
@@ -28,16 +29,8 @@ const openMenu = () => {
   window.scrollLock.disableScrolling();
   navLinks.forEach((navLink) => {
     navLink.addEventListener('click', closeMenu);
-    navLink.addEventListener('click', function (e) {
-      e.preventDefault();
-      const id = navLink.getAttribute('href');
-
-      document.querySelector(id).scrollIntoView({
-        behavior: 'smooth',
-        block: 'start',
-      });
-    });
   });
+  scrollSmooth(navLinks);
   navMenuOverlay.addEventListener('click', closeMenu);
   navToggle.addEventListener('click', closeMenu);
 };
